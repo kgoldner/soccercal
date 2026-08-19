@@ -3,3 +3,6 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Git leftovers this setup could not delete — safe to remove the folder
+_delete_me/

@@ -1,0 +1,455 @@
+{
+  "calendar_name": "Soccer 2026-27",
+  "timezone": "America/New_York",
+  "default_duration_minutes": 120,
+  "backfill_window_hours": 3,
+  "_comment_teams": "match_names are lowercase substrings tested against ESPN's displayName/shortDisplayName/abbreviation. Add aliases if a team shows up under a different label.",
+  "teams": {
+    "croatia_m": {
+      "label": "Croatia",
+      "match_names": [
+        "croatia"
+      ],
+      "exclude_names": [
+        "croatia w",
+        "women"
+      ],
+      "espn_league_hint": "uefa.nations",
+      "follow": "all"
+    },
+    "uswnt": {
+      "label": "USWNT",
+      "match_names": [
+        "united states",
+        "usa",
+        "usw"
+      ],
+      "require_womens": true,
+      "espn_league_hint": "fifa.friendly.w",
+      "follow": "all"
+    },
+    "real_madrid": {
+      "label": "Real Madrid",
+      "match_names": [
+        "real madrid"
+      ],
+      "exclude_names": [
+        "castilla",
+        "femenino",
+        "women"
+      ],
+      "espn_league_hint": "esp.1",
+      "follow": "all"
+    },
+    "man_city": {
+      "label": "Manchester City",
+      "match_names": [
+        "manchester city",
+        "man city"
+      ],
+      "exclude_names": [
+        "women"
+      ],
+      "espn_league_hint": "eng.1",
+      "follow": "domestic_and_ucl"
+    },
+    "man_united": {
+      "label": "Manchester United",
+      "match_names": [
+        "manchester united",
+        "man united",
+        "man utd"
+      ],
+      "exclude_names": [
+        "women"
+      ],
+      "espn_league_hint": "eng.1",
+      "follow": "domestic_and_ucl"
+    },
+    "arsenal": {
+      "label": "Arsenal",
+      "match_names": [
+        "arsenal"
+      ],
+      "exclude_names": [
+        "women"
+      ],
+      "espn_league_hint": "eng.1",
+      "follow": "domestic_and_ucl"
+    },
+    "psg": {
+      "label": "Paris Saint-Germain",
+      "match_names": [
+        "paris saint-germain",
+        "paris saint germain",
+        "psg"
+      ],
+      "exclude_names": [
+        "women"
+      ],
+      "espn_league_hint": "fra.1",
+      "follow": "ucl_only"
+    },
+    "barcelona": {
+      "label": "Barcelona",
+      "match_names": [
+        "barcelona"
+      ],
+      "exclude_names": [
+        "femeni",
+        "women",
+        "atletic"
+      ],
+      "espn_league_hint": "esp.1",
+      "follow": "ucl_only"
+    },
+    "bayern": {
+      "label": "Bayern Munich",
+      "match_names": [
+        "bayern munich",
+        "bayern münchen",
+        "fc bayern"
+      ],
+      "exclude_names": [
+        "women",
+        "frauen",
+        "ii"
+      ],
+      "espn_league_hint": "ger.1",
+      "follow": "ucl_only"
+    },
+    "liverpool": {
+      "label": "Liverpool",
+      "match_names": [
+        "liverpool"
+      ],
+      "exclude_names": [
+        "women"
+      ],
+      "espn_league_hint": "eng.1",
+      "follow": "ucl_only"
+    }
+  },
+  "_comment_competitions": "slug_candidates are tried in order; the first that returns data wins. rule controls which matches are kept.",
+  "competitions": [
+    {
+      "key": "eng.1",
+      "name": "Premier League",
+      "slug_candidates": [
+        "eng.1"
+      ],
+      "rule": "premier_league_clubs"
+    },
+    {
+      "key": "esp.1",
+      "name": "LaLiga",
+      "slug_candidates": [
+        "esp.1"
+      ],
+      "rule": "follow_all_teams"
+    },
+    {
+      "key": "uefa.champions",
+      "name": "UEFA Champions League",
+      "slug_candidates": [
+        "uefa.champions"
+      ],
+      "rule": "ucl_shortlist"
+    },
+    {
+      "key": "uefa.champions_qual",
+      "name": "UCL Qualifying",
+      "slug_candidates": [
+        "uefa.champions_qual"
+      ],
+      "rule": "ucl_shortlist"
+    },
+    {
+      "key": "uefa.super_cup",
+      "name": "UEFA Super Cup",
+      "slug_candidates": [
+        "uefa.super_cup"
+      ],
+      "rule": "always"
+    },
+    {
+      "key": "eng.charity",
+      "name": "FA Community Shield",
+      "slug_candidates": [
+        "eng.charity"
+      ],
+      "rule": "any_followed_team"
+    },
+    {
+      "key": "esp.super_cup",
+      "name": "Supercopa de España",
+      "slug_candidates": [
+        "esp.super_cup"
+      ],
+      "rule": "any_followed_team"
+    },
+    {
+      "key": "eng.fa",
+      "name": "FA Cup",
+      "slug_candidates": [
+        "eng.fa"
+      ],
+      "rule": "premier_league_clubs"
+    },
+    {
+      "key": "eng.league_cup",
+      "name": "Carabao Cup",
+      "slug_candidates": [
+        "eng.league_cup"
+      ],
+      "rule": "premier_league_clubs"
+    },
+    {
+      "key": "esp.copa_del_rey",
+      "name": "Copa del Rey",
+      "slug_candidates": [
+        "esp.copa_del_rey"
+      ],
+      "rule": "follow_all_teams"
+    },
+    {
+      "key": "fifa.cwc",
+      "name": "FIFA Club World Cup",
+      "slug_candidates": [
+        "fifa.cwc"
+      ],
+      "rule": "any_followed_team"
+    },
+    {
+      "key": "fifa.intercontinental_cup",
+      "name": "FIFA Intercontinental Cup",
+      "slug_candidates": [
+        "fifa.intercontinental_cup"
+      ],
+      "rule": "any_followed_team"
+    },
+    {
+      "key": "club.friendly",
+      "name": "Club Friendly",
+      "slug_candidates": [
+        "club.friendly"
+      ],
+      "rule": "follow_all_teams"
+    },
+    {
+      "key": "uefa.nations",
+      "name": "UEFA Nations League",
+      "slug_candidates": [
+        "uefa.nations"
+      ],
+      "rule": "follow_all_teams"
+    },
+    {
+      "key": "uefa.euroq",
+      "name": "UEFA Euro Qualifying",
+      "slug_candidates": [
+        "uefa.euroq"
+      ],
+      "rule": "follow_all_teams"
+    },
+    {
+      "key": "uefa.euro",
+      "name": "UEFA European Championship",
+      "slug_candidates": [
+        "uefa.euro"
+      ],
+      "rule": "follow_all_teams"
+    },
+    {
+      "key": "fifa.worldq.uefa",
+      "name": "World Cup Qualifying - UEFA",
+      "slug_candidates": [
+        "fifa.worldq.uefa"
+      ],
+      "rule": "follow_all_teams"
+    },
+    {
+      "key": "fifa.world",
+      "name": "FIFA World Cup",
+      "slug_candidates": [
+        "fifa.world"
+      ],
+      "rule": "follow_all_teams"
+    },
+    {
+      "key": "fifa.friendly",
+      "name": "International Friendly",
+      "slug_candidates": [
+        "fifa.friendly"
+      ],
+      "rule": "follow_all_teams"
+    },
+    {
+      "key": "fifa.friendly.w",
+      "name": "Women's International Friendly",
+      "slug_candidates": [
+        "fifa.friendly.w"
+      ],
+      "rule": "follow_all_teams"
+    },
+    {
+      "key": "fifa.shebelieves",
+      "name": "SheBelieves Cup",
+      "slug_candidates": [
+        "fifa.shebelieves"
+      ],
+      "rule": "follow_all_teams"
+    },
+    {
+      "key": "generic.ussf",
+      "name": "U.S. Soccer Match",
+      "slug_candidates": [
+        "generic.ussf"
+      ],
+      "rule": "follow_all_teams"
+    },
+    {
+      "key": "concacaf.w.gold",
+      "name": "Concacaf W Gold Cup",
+      "slug_candidates": [
+        "concacaf.w.gold"
+      ],
+      "rule": "follow_all_teams"
+    },
+    {
+      "key": "fifa.w.olympics",
+      "name": "Women's Olympic Football",
+      "slug_candidates": [
+        "fifa.w.olympics"
+      ],
+      "rule": "follow_all_teams"
+    },
+    {
+      "key": "fifa.wwc",
+      "name": "FIFA Women's World Cup",
+      "slug_candidates": [
+        "fifa.wwc"
+      ],
+      "rule": "follow_all_teams"
+    },
+    {
+      "key": "global.finalissima",
+      "name": "Finalissima",
+      "slug_candidates": [
+        "global.finalissima"
+      ],
+      "rule": "follow_all_teams"
+    }
+  ],
+  "_comment_broadcast": "Static US rights map. ESPN's own broadcast field is appended when present. Edit these strings if rights change mid-season.",
+  "broadcast_map": {
+    "eng.1": {
+      "primary": "Peacock/Telemundo: availability varies by match; USA/NBC linear matches can also be watched through Hulu + Live TV. Exact U.S. assignment announced closer to kickoff.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only when carried on an included NBC/USA/Telemundo channel. HBO Max: No. Peacock/Telemundo: Yes, subject to the per-match assignment. Paramount+: No."
+    },
+    "esp.1": {
+      "primary": "ESPN Unlimited (ESPN+/ESPN Select) is the U.S. home of LaLiga; select matches simulcast on ESPN Deportes.",
+      "check": "beIN Connect: No. ESPN Unlimited: Yes. Hulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear channel for simulcast matches. HBO Max: No. Peacock/Telemundo: No. Paramount+: No."
+    },
+    "uefa.champions": {
+      "primary": "Paramount+ is the U.S. English-language home of UEFA club competitions; Spanish-language coverage on TUDN/ViX.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only if a carrying CBS channel is included. HBO Max: No. Peacock/Telemundo: No. Paramount+: Yes."
+    },
+    "uefa.super_cup": {
+      "primary": "Paramount+: U.S. English-language streaming home for UEFA club competitions.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only if a carrying CBS channel is included. HBO Max: No. Peacock/Telemundo: No. Paramount+: Yes."
+    },
+    "eng.charity": {
+      "primary": "FA Community Shield U.S. rights have moved between carriers; check ESPN Unlimited and Paramount+ listings in the days before kickoff.",
+      "check": "beIN Connect: Possible. ESPN Unlimited: Possible. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: No. Peacock/Telemundo: No. Paramount+: Possible."
+    },
+    "esp.super_cup": {
+      "primary": "Supercopa de España airs in the U.S. on ESPN Unlimited (ESPN+/ESPN Deportes).",
+      "check": "beIN Connect: No. ESPN Unlimited: Yes. Hulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear channel. HBO Max: No. Peacock/Telemundo: No. Paramount+: No."
+    },
+    "eng.fa": {
+      "primary": "FA Cup matches stream in the U.S. on ESPN Unlimited, with selected ties on ESPN linear networks.",
+      "check": "beIN Connect: No. ESPN Unlimited: Yes. Hulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear channel. HBO Max: No. Peacock/Telemundo: No. Paramount+: No."
+    },
+    "eng.league_cup": {
+      "primary": "Carabao Cup (EFL Cup) matches stream in the U.S. on Paramount+.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only if a carrying CBS channel is included. HBO Max: No. Peacock/Telemundo: No. Paramount+: Yes."
+    },
+    "esp.copa_del_rey": {
+      "primary": "Copa del Rey streams in the U.S. on ESPN Unlimited.",
+      "check": "beIN Connect: No. ESPN Unlimited: Yes. Hulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear channel. HBO Max: No. Peacock/Telemundo: No. Paramount+: No."
+    },
+    "fifa.cwc": {
+      "primary": "FIFA Club World Cup U.S. coverage has been on DAZN with select matches on linear partners; confirm nearer the tournament.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Unlikely. HBO Max: No. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+    },
+    "uefa.nations": {
+      "primary": "UEFA Nations League streams in the U.S. on HBO Max (English) and Peacock/Telemundo or ViX (Spanish), depending on the cycle's rights deal.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+    },
+    "uefa.euroq": {
+      "primary": "UEFA national-team qualifying streams in the U.S. on HBO Max, with Spanish-language coverage on Peacock/Telemundo or ViX.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+    },
+    "fifa.friendly": {
+      "primary": "Friendly broadcast rights are sold per match by the host federation; check beIN Connect, ESPN Unlimited, HBO Max, and Paramount+ listings in the week of the match.",
+      "check": "beIN Connect: Possible. ESPN Unlimited: Possible. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Possible. Peacock/Telemundo: Possible. Paramount+: Possible."
+    },
+    "fifa.friendly.w": {
+      "primary": "USWNT friendlies air in the U.S. on the USSF rights package (TNT/HBO Max family, with Spanish-language coverage on Universo/Peacock).",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included TNT/TBS channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+    },
+    "_default": {
+      "primary": "U.S. rights for this competition are not mapped; check beIN Connect, ESPN Unlimited, Hulu + Live TV, HBO Max, Peacock/Telemundo, and Paramount+ listings in the week of the match.",
+      "check": "beIN Connect: Unknown. ESPN Unlimited: Unknown. Hulu: No direct stream. Hulu + Live TV: Unknown. HBO Max: Unknown. Peacock/Telemundo: Unknown. Paramount+: Unknown."
+    },
+    "concacaf.w.gold": {
+      "primary": "Concacaf W competitions air in the U.S. across Paramount+ and the USSF rights partners; confirm per match.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Possible. Peacock/Telemundo: Possible. Paramount+: Possible."
+    },
+    "fifa.w.olympics": {
+      "primary": "Olympic football in the U.S. is on the NBC family: Peacock streams every match, with Telemundo carrying Spanish-language coverage.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included NBC/USA channel. HBO Max: No. Peacock/Telemundo: Yes. Paramount+: No."
+    },
+    "uefa.champions_qual": {
+      "primary": "Paramount+ is the U.S. English-language home of UEFA club competitions; Spanish-language coverage on TUDN/ViX.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only if a carrying CBS channel is included. HBO Max: No. Peacock/Telemundo: No. Paramount+: Yes."
+    },
+    "generic.ussf": {
+      "primary": "USWNT friendlies air in the U.S. on the USSF rights package (TNT/HBO Max family, with Spanish-language coverage on Universo/Peacock).",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included TNT/TBS channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+    },
+    "fifa.shebelieves": {
+      "primary": "USWNT friendlies air in the U.S. on the USSF rights package (TNT/HBO Max family, with Spanish-language coverage on Universo/Peacock).",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included TNT/TBS channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+    },
+    "fifa.wwc": {
+      "primary": "FIFA Women's World Cup U.S. rights sit with the Fox family (Fox/FS1) in English and Telemundo/Peacock in Spanish.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Yes, via included Fox/FS1 channels. HBO Max: No. Peacock/Telemundo: Yes for Spanish-language. Paramount+: No."
+    },
+    "fifa.world": {
+      "primary": "FIFA World Cup U.S. coverage is on Fox/FS1 in English and Telemundo/Peacock in Spanish.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Yes, via included Fox/FS1 channels. HBO Max: No. Peacock/Telemundo: Yes for Spanish-language. Paramount+: No."
+    },
+    "fifa.worldq.uefa": {
+      "primary": "UEFA national-team qualifying streams in the U.S. on HBO Max, with Spanish-language coverage on Peacock/Telemundo or ViX.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+    },
+    "uefa.euro": {
+      "primary": "UEFA national-team qualifying streams in the U.S. on HBO Max, with Spanish-language coverage on Peacock/Telemundo or ViX.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+    },
+    "club.friendly": {
+      "primary": "Preseason club friendlies are sold per match; many stream on ESPN Unlimited or the clubs' own platforms.",
+      "check": "beIN Connect: Possible. ESPN Unlimited: Possible. Hulu: No direct stream. Hulu + Live TV: Unlikely. HBO Max: No. Peacock/Telemundo: Possible. Paramount+: Possible."
+    },
+    "fifa.intercontinental_cup": {
+      "primary": "FIFA Club World Cup U.S. coverage has been on DAZN with select matches on linear partners; confirm nearer the tournament.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Unlikely. HBO Max: No. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+    },
+    "global.finalissima": {
+      "primary": "Friendly broadcast rights are sold per match by the host federation; check beIN Connect, ESPN Unlimited, HBO Max, and Paramount+ listings in the week of the match.",
+      "check": "beIN Connect: Possible. ESPN Unlimited: Possible. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Possible. Peacock/Telemundo: Possible. Paramount+: Possible."
+    }
+  }
+}

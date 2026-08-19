@@ -1,0 +1,5 @@
+# Atomic-write leftovers from an interrupted run
+*.ics.tmp
+__pycache__/
+*.pyc
+.DS_Store

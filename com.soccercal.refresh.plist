@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.soccercal.refresh</string>
+
+  <!-- Paths are already filled in for this Mac. -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/kgoldner/Documents/calendar/soccer_cal.py</string>
+    <string>--calendar</string>
+    <string>/Users/kgoldner/Documents/calendar/soccer-calendar.ics</string>
+    <string>--verbose</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/kgoldner/Documents/calendar</string>
+
+  <!-- 07:15 local time daily. If the Mac is asleep at 07:15, launchd runs
+       this once on the next wake rather than skipping the day. -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key><integer>7</integer>
+    <key>Minute</key><integer>15</integer>
+  </dict>
+
+  <key>RunAtLoad</key>
+  <false/>
+
+  <!-- Logs live under ~/Library/Logs so they survive reboots (/tmp does not).
+       Check these first if the calendar ever stops updating. -->
+  <key>StandardOutPath</key>
+  <string>/Users/kgoldner/Library/Logs/soccercal.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/kgoldner/Library/Logs/soccercal.err</string>
+</dict>
+</plist>

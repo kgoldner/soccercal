@@ -6,17 +6,23 @@
   <key>Label</key>
   <string>com.soccercal.refresh</string>
 
-  <!-- Paths are already filled in for this Mac. -->
+  <!-- Paths are filled in for this Mac.
+       NOTE: this folder deliberately lives OUTSIDE ~/Documents.
+       macOS privacy protection (TCC) blocks launchd jobs from
+       reading ~/Documents, ~/Desktop and ~/Downloads; a launchd
+       run there fails with 'Operation not permitted' even though
+       the same command works fine in Terminal. Do not move this
+       back into Documents. -->
   <key>ProgramArguments</key>
   <array>
     <string>/usr/bin/python3</string>
-    <string>/Users/kgoldner/Documents/calendar/soccer_cal.py</string>
+    <string>/Users/kgoldner/soccercal/soccer_cal.py</string>
     <string>--calendar</string>
-    <string>/Users/kgoldner/Documents/calendar/soccer-calendar.ics</string>
+    <string>/Users/kgoldner/soccercal/soccer-calendar.ics</string>
     <string>--verbose</string>
   </array>
   <key>WorkingDirectory</key>
-  <string>/Users/kgoldner/Documents/calendar</string>
+  <string>/Users/kgoldner/soccercal</string>
 
   <!-- 07:15 local time daily. If the Mac is asleep at 07:15, launchd runs
        this once on the next wake rather than skipping the day. -->

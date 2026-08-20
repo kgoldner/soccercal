@@ -53,7 +53,7 @@ token. That means the fixture list is world-readable. It's football fixtures, so
 low stakes, but it is public.
 
 This folder is already a git repo with everything committed. From
-`~/Documents/calendar`:
+`~/soccercal`:
 
 ```bash
 # 1. Create the repo on GitHub (or create it in the web UI and skip to step 2)
@@ -90,13 +90,21 @@ Nothing leaves your machine, but it only runs when the Mac is awake. The plist
 already has the correct paths filled in for this folder.
 
 ```bash
-cp ~/Documents/calendar/com.soccercal.refresh.plist ~/Library/LaunchAgents/
+cp ~/soccercal/com.soccercal.refresh.plist ~/Library/LaunchAgents/
 launchctl load ~/Library/LaunchAgents/com.soccercal.refresh.plist
 
 # force one run right now to confirm it works
 launchctl start com.soccercal.refresh
 cat ~/Library/Logs/soccercal.err
 ```
+
+**This folder must stay out of `~/Documents`.** macOS privacy protection blocks
+scheduled background jobs from reading `~/Documents`, `~/Desktop` and
+`~/Downloads`. A launchd run there fails with `Operation not permitted` while
+the identical command works in Terminal, because your Terminal has been granted
+that access and launchd has not. The alternative — granting Full Disk Access to
+`/usr/bin/python3` — would hand that permission to every Python script you ever
+run, which is why this uses an unprotected folder instead.
 
 It runs at 07:15 local time. If the Mac is asleep then, launchd runs it once on
 the next wake rather than skipping the day. Logs land in
@@ -116,7 +124,7 @@ To stop it: `launchctl unload ~/Library/LaunchAgents/com.soccercal.refresh.plist
 Whichever option you pick, do a dry run first — it writes nothing:
 
 ```bash
-cd ~/Documents/calendar
+cd ~/soccercal
 python3 soccer_cal.py --dry-run --verbose
 ```
 
@@ -179,7 +187,7 @@ next run.
 ## Tests
 
 ```bash
-cd ~/Documents/calendar
+cd ~/soccercal
 python3 test_offline.py
 ```
 

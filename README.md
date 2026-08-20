@@ -29,10 +29,11 @@ No alarms are ever written.
 ## What's in this folder
 
 ```
-soccer-calendar.ics                    your calendar — 155 events, the live file
+soccer-calendar.ics                    your calendar — the live file
 soccer_cal.py                          the updater
 config.json                            teams, competitions, broadcast notes
-test_offline.py                        22 checks, no network needed
+test_offline.py                        22 merge checks, no network needed
+test_sweep.py                          20 fixture-sweep checks, no network needed
 .github/workflows/update-calendar.yml  the daily GitHub Action
 com.soccercal.refresh.plist            the daily launchd job (macOS alternative)
 ```
@@ -129,9 +130,14 @@ You do **not** need `--seed`. That flag is for importing history from a
 different file; your existing calendar is already at the path the script reads
 and rewrites.
 
-Expect the first real run to *add* a fair amount: the current file has no
-Champions League matches (the draw hadn't been made when it was generated), no
-USWNT matches, and no domestic super cups.
+The first live run (20 Aug 2026) added 9 fixtures and brought the calendar to
+164 events: 5 Premier League, 2 Supercopa de España, and 2 USWNT friendlies
+against Spain. It costs about 310 requests of the 900 budget.
+
+Champions League still returns 0 — the 2026-27 draw hasn't been made yet. That
+is expected, and the daily run will fill it in on its own once ESPN publishes
+the fixtures, because new matches are added while they are still in the
+future.
 
 ## Options
 
@@ -177,17 +183,48 @@ cd ~/Documents/calendar
 python3 test_offline.py
 ```
 
-22 checks covering the merge logic against your real calendar file — that a past
-match isn't back-added, that a kickoff-time change moves an event rather than
-duplicating it, that re-running changes nothing, that legacy events survive
-pruning. No network required.
+```bash
+python3 test_sweep.py
+```
+
+`test_offline.py` is 22 checks on the merge logic against your real calendar
+file — that a past match isn't back-added, that a kickoff-time change moves an
+event rather than duplicating it, that re-running changes nothing, that legacy
+events survive pruning.
+
+`test_sweep.py` is 20 checks on the fixture sweep, asserting on request *counts*
+as well as fixtures found, because the sweep bug that reached production was
+invisible in the fixture count alone.
+
+Neither needs the network.
+
+## Things the live runs taught us
+
+Worth knowing before you change anything in `soccer_cal.py`:
+
+**Don't set a User-Agent.** ESPN returns HTTP 403 for any User-Agent string it
+doesn't recognise — including `soccer-cal/1.0`, and including a full Chrome
+string. Python's own default (`Python-urllib/3.x`) is accepted, so the script
+deliberately sends no User-Agent header. If every competition suddenly reports
+`no working slug` and the log is full of 403s, this is why; the script now says
+so in its error output.
+
+**Query by month, not by date.** ESPN publishes a per-competition calendar of
+fixture dates, but it is neither complete nor cheap to walk. Expanding a
+`{startDate, endDate}` span into individual days once cost 776 of the 900
+request budget across three competitions and starved every competition after
+them into reporting fake zeros. Querying only the dates ESPN lists is cheap but
+misses fixtures on unlisted dates — it lost 50 Premier League matches. Whole
+calendar months are both cheaper and wider than either. `test_sweep.py` pins
+all three behaviours.
+
+**Watch the request counts, not just the fixture counts.** The per-competition
+log line reports requests used and budget remaining. A competition reporting 0
+fixtures after burning 100+ requests is a bug; 0 fixtures after ~15 is just an
+empty competition.
 
 ## A caveat worth knowing
 
 ESPN's fixture API is undocumented and unofficial. It is reliable in practice
 and needs no API key, but nobody promises it won't change. The script is written
 to fail safely rather than destructively.
-
-The live fetch path has never been exercised against a real ESPN response — the
-sandbox this was built in couldn't reach ESPN. The merge logic is well tested;
-the fetching is not. That's why the dry run in *First run* matters.

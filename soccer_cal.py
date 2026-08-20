@@ -32,10 +32,18 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer"
-USER_AGENT = "soccer-cal/1.0 (personal calendar builder)"
+# ESPN's edge rejects User-Agent strings it does not recognise, and also
+# rejects strings that claim to be a browser without a browser's other
+# headers. Both "soccer-cal/1.0" and a Chrome UA return HTTP 403; urllib's
+# own default ("Python-urllib/3.x") returns 200. So we send no User-Agent
+# header and let urllib identify itself truthfully.
+# Verified against site.api.espn.com on 2026-08-20.
 PRODID = "-//soccer_cal.py//Soccer Calendar//EN"
 
 LOG_LEVEL = 1  # 0 quiet, 1 normal, 2 verbose
+MAX_RANGE_DAYS = 45   # longest span asked for in a single dates= query
+MIN_COMP_REQUESTS = 15  # floor on any one competition's request share
+HTTP_STATUS_COUNTS: dict = {}  # status code -> times seen, for diagnostics
 
 
 def log(msg: str, level: int = 1) -> None:
@@ -53,12 +61,13 @@ def fetch_json(url: str, retries: int = 3, timeout: int = 25):
     for attempt in range(retries):
         try:
             req = urllib.request.Request(
-                url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"}
+                url, headers={"Accept": "application/json"}
             )
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return json.loads(resp.read().decode("utf-8"))
         except urllib.error.HTTPError as e:
             last_err = f"HTTP {e.code}"
+            HTTP_STATUS_COUNTS[e.code] = HTTP_STATUS_COUNTS.get(e.code, 0) + 1
             if e.code in (400, 404):
                 return None  # bad slug; no point retrying
         except Exception as e:  # noqa: BLE001
@@ -290,33 +299,66 @@ def resolve_slug(comp: dict) -> "tuple[str, dict] | tuple[None, None]":
     return None, None
 
 
-def calendar_dates(payload: dict, start: datetime, end: datetime) -> list:
-    """ESPN publishes the exact dates a competition has fixtures on.
+def calendar_windows(payload: dict, start: datetime, end: datetime) -> list:
+    """ESPN publishes when a competition has fixtures, as either single date
+    strings or {startDate, endDate} objects.
 
-    Entries are either ISO date strings or {startDate, endDate} objects,
-    depending on the competition's calendarType.
+    Return one (start, end) yyyymmdd window per CALENDAR MONTH that contains
+    any published fixture date, clipped to our overall window.
+
+    Month granularity is deliberate, and both failure modes it avoids were
+    observed live:
+
+    - Expanding a {startDate, endDate} span into individual days made one
+      competition cost 328 requests instead of 9.
+    - Querying only tight clusters of listed dates missed 50 Premier League
+      fixtures, because ESPN's published calendar does not always list every
+      date a match is eventually scheduled on. A whole-month range catches
+      fixtures that appear on unlisted dates.
+
+    The result is at most ~14 requests per competition with wider coverage
+    than either alternative.
     """
-    out = []
     leagues = payload.get("leagues") or []
     if not leagues:
-        return out
+        return []
+
+    spans = []
     for entry in leagues[0].get("calendar") or []:
         if isinstance(entry, str):
             d = _parse_iso_utc(entry)
             if d:
-                out.append(d)
+                spans.append((d, d))
         elif isinstance(entry, dict):
             s = _parse_iso_utc(entry.get("startDate", "") or "")
             e = _parse_iso_utc(entry.get("endDate", "") or "")
-            if s and e:
-                cur = s
-                while cur <= e and (cur - s).days < 400:
-                    out.append(cur)
-                    cur += timedelta(days=1)
+            if s and e and e >= s:
+                spans.append((s, e))
             elif s:
-                out.append(s)
-    uniq = sorted({d.strftime("%Y%m%d") for d in out if start <= d <= end})
-    return uniq
+                spans.append((s, s))
+    if not spans:
+        return []
+
+    # Every month touched by any span, clipped to our window.
+    months = set()
+    for s, e in spans:
+        if e < start or s > end:
+            continue
+        cur = max(s, start).replace(day=1)
+        stop = min(e, end)
+        while cur <= stop:
+            months.add((cur.year, cur.month))
+            cur = (cur.replace(day=28) + timedelta(days=8)).replace(day=1)
+
+    windows = []
+    for year, month in sorted(months):
+        m_start = datetime(year, month, 1, tzinfo=timezone.utc)
+        m_end = (m_start.replace(day=28) + timedelta(days=8)).replace(day=1) \
+            - timedelta(days=1)
+        w_start, w_end = max(m_start, start), min(m_end, end)
+        if w_start <= w_end:
+            windows.append((w_start.strftime("%Y%m%d"), w_end.strftime("%Y%m%d")))
+    return windows
 
 
 def _collect(url: str, comp: dict, into: dict) -> int:
@@ -333,62 +375,85 @@ def _collect(url: str, comp: dict, into: dict) -> int:
 
 
 def sweep_competition(comp: dict, slug: str, payload: dict,
-                      start: datetime, end: datetime, budget: list) -> list:
+                      start: datetime, end: datetime, budget: list,
+                      comps_left: int = 1) -> list:
     """Collect every fixture for a competition inside the window.
 
-    ESPN's soccer scoreboard uses a whitelist calendar, and date-range
-    queries are undocumented and not honoured by every competition. So:
-    try a range request first, and if it comes back empty for a month the
-    calendar says has fixtures, fall back to fetching those dates directly.
+    Range queries (dates=YYYYMMDD-YYYYMMDD) work for most competitions and
+    are far cheaper than one request per day, so they are the default. The
+    per-date fallback exists because ESPN's scoreboard uses a whitelist
+    calendar and a few competitions ignore ranges — but it is only engaged
+    on positive evidence (see the probe below), never on a bare zero.
+
+    Each competition gets at most a fair share of the remaining budget, so
+    one greedy competition cannot starve the ones after it.
     """
     seen: dict = {}
-    cal = calendar_dates(payload, start, end)
+    windows = calendar_windows(payload, start, end)
+    if not windows:
+        # No published calendar: fall back to month-by-month range sweep.
+        windows = [(w0.strftime("%Y%m%d"), w1.strftime("%Y%m%d"))
+                   for w0, w1 in month_windows(start, end)]
 
-    if not cal:
-        # Tournament with no published calendar: month-by-month range sweep.
-        for w_start, w_end in month_windows(start, end):
-            if budget[0] <= 0:
-                break
-            rng = f"{w_start.strftime('%Y%m%d')}-{w_end.strftime('%Y%m%d')}"
-            budget[0] -= 1
-            _collect(f"{ESPN_BASE}/{slug}/scoreboard?dates={rng}&limit=800", comp, seen)
-            time.sleep(0.25)
-        return list(seen.values())
+    share = max(MIN_COMP_REQUESTS, budget[0] // max(1, comps_left))
+    spend = [min(budget[0], share)]
 
-    # Group the known fixture dates by month.
-    by_month: dict = {}
-    for d in cal:
-        by_month.setdefault(d[:6], []).append(d)
+    def take() -> bool:
+        if budget[0] <= 0 or spend[0] <= 0:
+            return False
+        budget[0] -= 1
+        spend[0] -= 1
+        return True
 
-    range_mode = None  # None = untested, True/False once decided
-    for month, days in sorted(by_month.items()):
-        if budget[0] <= 0:
-            log("    ! request budget exhausted", 2)
+    range_ok = None    # None = undecided, True/False once we have evidence
+    probes_left = 3    # single-date probes spent deciding, at most
+    for w_start, w_end in windows:
+        if not take():
+            log(f"    ! request share exhausted for {slug} "
+                f"(used {share - spend[0]} of {share})", 2)
             break
 
-        if range_mode is not False:
-            rng = f"{days[0]}-{days[-1]}"
-            budget[0] -= 1
-            before = len(seen)
-            _collect(f"{ESPN_BASE}/{slug}/scoreboard?dates={rng}&limit=800", comp, seen)
-            gained = len(seen) - before
-            time.sleep(0.25)
-            if range_mode is None:
-                # Decide once: a working range query returns roughly a
-                # month's worth of fixtures, not one date's worth.
-                range_mode = gained > 0 and (len(days) == 1 or gained > len(days) * 0.4)
-                log(f"    range queries {'work' if range_mode else 'unsupported'} "
-                    f"for {slug} ({gained} from {len(days)} dates)", 2)
-            if range_mode:
-                continue
-            # fall through and fetch this month per-date
+        before = len(seen)
+        _collect(f"{ESPN_BASE}/{slug}/scoreboard?dates={w_start}-{w_end}&limit=800",
+                 comp, seen)
+        time.sleep(0.25)
+        gained = len(seen) - before
 
-        for day in days:
-            if budget[0] <= 0:
-                break
-            budget[0] -= 1
-            _collect(f"{ESPN_BASE}/{slug}/scoreboard?dates={day}&limit=500", comp, seen)
-            time.sleep(0.25)
+        if range_ok is None and w_start != w_end:
+            if gained > 0:
+                range_ok = True
+                log(f"    range queries work for {slug}", 2)
+            else:
+                # A zero-yield range may simply be an empty window rather
+                # than a broken query. Probe one day directly and compare;
+                # only a day that returns fixtures the range missed is
+                # evidence that ranges are unsupported. Bounded, because a
+                # competition with no fixtures at all would otherwise probe
+                # once per window forever.
+                if probes_left > 0 and take():
+                    probes_left -= 1
+                    probe: dict = {}
+                    _collect(f"{ESPN_BASE}/{slug}/scoreboard?dates={w_start}&limit=500",
+                             comp, probe)
+                    time.sleep(0.25)
+                    if probe:
+                        range_ok = False
+                        seen.update(probe)
+                        log(f"    range queries unsupported for {slug}; "
+                            f"falling back to per-date", 2)
+                    # both empty -> stay undecided, the window is just empty
+
+        if range_ok is False:
+            d0 = datetime.strptime(w_start, "%Y%m%d").replace(tzinfo=timezone.utc)
+            d1 = datetime.strptime(w_end, "%Y%m%d").replace(tzinfo=timezone.utc)
+            cur = d0 + timedelta(days=1)  # day 0 already fetched by the probe
+            while cur <= d1:
+                if not take():
+                    break
+                _collect(f"{ESPN_BASE}/{slug}/scoreboard?dates="
+                         f"{cur.strftime('%Y%m%d')}&limit=500", comp, seen)
+                time.sleep(0.25)
+                cur += timedelta(days=1)
 
     return list(seen.values())
 
@@ -820,18 +885,27 @@ def main() -> int:
     budget = [args.max_requests]
 
     fixtures, fetched_ok = [], set()
-    for comp in cfg["competitions"]:
+    comps = cfg["competitions"]
+    for i, comp in enumerate(comps):
         slug, payload = resolve_slug(comp)
         if not slug:
             log(f"  – {comp['name']}: no working slug, skipped")
             continue
-        found = sweep_competition(comp, slug, payload, start, end, budget)
+        spent_before = budget[0]
+        found = sweep_competition(comp, slug, payload, start, end, budget,
+                                  comps_left=len(comps) - i)
+        used = spent_before - budget[0]
         kept = [fx for fx in found if keep_fixture(fx, comp["rule"], cfg["teams"])]
         if found:
             fetched_ok.add(comp["key"])
         log(f"  ✓ {comp['name']} [{slug}]: {len(found)} fixtures, {len(kept)} kept "
-            f"(budget left {budget[0]})")
+            f"({used} requests, budget left {budget[0]})")
         fixtures.extend(kept)
+
+    if budget[0] <= 0:
+        log("WARNING: the request budget was exhausted. Competitions late in "
+            "the list may report 0 fixtures because they were never queried, "
+            "not because none exist. Re-run with a larger --max-requests.")
 
     # De-duplicate across competitions (a match can appear in two feeds).
     dedup = {}
@@ -841,6 +915,15 @@ def main() -> int:
 
     if not fixtures and not args.allow_empty:
         log("ERROR: feed returned no fixtures. Leaving the calendar untouched.")
+        if HTTP_STATUS_COUNTS.get(403):
+            log(f"       {HTTP_STATUS_COUNTS[403]} request(s) rejected with HTTP 403.")
+            log("       ESPN blocks User-Agent strings it does not recognise, and")
+            log("       strings impersonating a browser. Check that fetch_json is")
+            log("       not setting a custom User-Agent header.")
+        elif HTTP_STATUS_COUNTS.get(404):
+            log(f"       {HTTP_STATUS_COUNTS[404]} request(s) returned HTTP 404 —")
+            log("       likely renamed competition slugs. See slug_candidates in")
+            log("       config.json.")
         return 2
 
     blocks, stats = merge(cfg, fixtures, existing, fetched_ok, tz, now,
@@ -851,10 +934,24 @@ def main() -> int:
     log(f"added {stats.added} · updated {stats.updated} · unchanged {stats.unchanged} "
         f"· preserved {stats.preserved} · pruned {stats.pruned} "
         f"· skipped-already-played {stats.skipped_past}")
-    for n in stats.notes[:40]:
+    # Additions and removals are what a human needs to review; routine
+    # "updated" lines are noise and used to crowd them out of the cap.
+    def note_rank(n: str) -> int:
+        s = n.strip()
+        if s.startswith("added:"):
+            return 0
+        if s.startswith("pruned:"):
+            return 1
+        if s.startswith("skipped"):
+            return 2
+        return 3
+
+    ordered = sorted(stats.notes, key=note_rank)
+    for n in ordered[:40]:
         log(f"  {n}")
-    if len(stats.notes) > 40:
-        log(f"  … and {len(stats.notes) - 40} more")
+    if len(ordered) > 40:
+        hidden = len(ordered) - 40
+        log(f"  … and {hidden} more (routine updates; run with -q to hide detail)")
 
     if args.dry_run:
         log("(dry run — nothing written)")

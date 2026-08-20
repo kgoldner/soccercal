@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.soccercal.serve</string>
+
+  <!-- Serves ONLY ~/soccercal/public (which holds a link to the .ics) and
+       ONLY on 127.0.0.1, so nothing is reachable from your network or the
+       internet. This exists because calendar apps subscribe over HTTP; a
+       file:// subscription is refused by app sandboxing. -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>-m</string>
+    <string>http.server</string>
+    <string>8765</string>
+    <string>--bind</string>
+    <string>127.0.0.1</string>
+    <string>--directory</string>
+    <string>/Users/kgoldner/soccercal/public</string>
+  </array>
+
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/kgoldner/Library/Logs/soccercal-serve.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/kgoldner/Library/Logs/soccercal-serve.err</string>
+</dict>
+</plist>

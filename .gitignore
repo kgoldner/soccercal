@@ -6,3 +6,8 @@ __pycache__/
 
 # Git leftovers this setup could not delete — safe to remove the folder
 _delete_me/
+
+# Run logs
+dryrun.log
+run.log
+test.log

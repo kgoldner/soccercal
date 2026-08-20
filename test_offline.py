@@ -145,8 +145,28 @@ def main():
     blocks4, stats4 = sc.merge(cfg, fixtures, reparsed, {"eng.1"}, TZ, NOW, prune=True)
     past_kept = sum(1 for e in reparsed.values() if e.start and e.start <= NOW)
     check("past events never pruned", stats4.pruned < len(reparsed) - past_kept + 1)
+    # Events with no X-SOCCERCAL-COMP tag cannot be attributed to any
+    # competition, so no successful fetch may ever prune them. Asserted
+    # directly rather than via "nothing was pruned at all" — once the real
+    # calendar carries competition tags, pruning tagged events against a
+    # small synthetic feed is correct, and the blanket assertion broke.
+    out4 = Path("/tmp/out4.ics")
+    open(out4, "w", encoding="utf-8", newline="").write(sc.render_calendar(cfg, blocks4))
+    survivors = sc.parse_ics(out4, TZ)
+    legacy_uids = {u for u, e in reparsed.items() if not e.comp_key}
+    survived = sum(1 for u in legacy_uids if u in survivors)
     check("legacy events (no X-SOCCERCAL-COMP) survive prune",
-          stats4.pruned == 0, f"pruned={stats4.pruned}")
+          legacy_uids and survived == len(legacy_uids),
+          f"{survived}/{len(legacy_uids)} survived")
+    # Anything that disappeared must have been tagged with the ONE
+    # competition that fetched successfully. A dropped event tagged to any
+    # other competition would mean a failed fetch had deleted data.
+    dropped = [reparsed[u] for u in set(reparsed) - set(survivors)]
+    wrong = [e for e in dropped if e.comp_key != "eng.1"]
+    check("pruning only ever touches the fetched competition",
+          not wrong,
+          f"{len(wrong)} dropped from unfetched comps: "
+          f"{sorted({e.comp_key or '<untagged>' for e in wrong})}")
 
     print("\n" + ("ALL CHECKS PASSED" if not fails else f"{len(fails)} FAILED: {fails}"))
     return 1 if fails else 0

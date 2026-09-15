@@ -17,6 +17,21 @@
       "espn_league_hint": "uefa.nations",
       "follow": "all"
     },
+    "england_m": {
+      "label": "England",
+      "match_names": [
+        "england"
+      ],
+      "exclude_names": [
+        "new england",
+        "england w",
+        "women",
+        "u21",
+        "u19"
+      ],
+      "espn_league_hint": "uefa.nations",
+      "follow": "all"
+    },
     "uswnt": {
       "label": "USWNT",
       "match_names": [
@@ -345,111 +360,138 @@
   "broadcast_map": {
     "eng.1": {
       "primary": "Peacock/Telemundo: availability varies by match; USA/NBC linear matches can also be watched through Hulu + Live TV. Exact U.S. assignment announced closer to kickoff.",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only when carried on an included NBC/USA/Telemundo channel. HBO Max: No. Peacock/Telemundo: Yes, subject to the per-match assignment. Paramount+: No."
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only when carried on an included NBC/USA/Telemundo channel. HBO Max: No. Peacock/Telemundo: Yes, subject to the per-match assignment. Paramount+: No.",
+      "replay": "Peacock posts full-match replays of matches it streams or that air on NBC, usually shortly after full time. Matches carried on USA Network, CNBC or Syfy are currently absent from Peacock's replay library after the Versant spin-off - for those, record the linear broadcast (DVR via Hulu + Live TV or similar) to rewatch."
     },
     "esp.1": {
       "primary": "ESPN Unlimited (ESPN+/ESPN Select) is the U.S. home of LaLiga; select matches simulcast on ESPN Deportes.",
-      "check": "beIN Connect: No. ESPN Unlimited: Yes. Hulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear channel for simulcast matches. HBO Max: No. Peacock/Telemundo: No. Paramount+: No."
+      "check": "beIN Connect: No. ESPN Unlimited: Yes. Hulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear channel for simulcast matches. HBO Max: No. Peacock/Telemundo: No. Paramount+: No.",
+      "replay": "On demand in the ESPN app after the final whistle - no recording needed. Replays typically stay up for about three to four weeks."
     },
     "uefa.champions": {
       "primary": "Paramount+ is the U.S. English-language home of UEFA club competitions; Spanish-language coverage on TUDN/ViX.",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only if a carrying CBS channel is included. HBO Max: No. Peacock/Telemundo: No. Paramount+: Yes."
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only if a carrying CBS channel is included. HBO Max: No. Peacock/Telemundo: No. Paramount+: Yes.",
+      "replay": "On demand on Paramount+ almost immediately after the final whistle, on any plan - no recording needed. Condensed replays are posted alongside it."
     },
     "uefa.super_cup": {
       "primary": "Paramount+: U.S. English-language streaming home for UEFA club competitions.",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only if a carrying CBS channel is included. HBO Max: No. Peacock/Telemundo: No. Paramount+: Yes."
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only if a carrying CBS channel is included. HBO Max: No. Peacock/Telemundo: No. Paramount+: Yes.",
+      "replay": "On demand on Paramount+ almost immediately after the final whistle, on any plan - no recording needed. Condensed replays are posted alongside it."
     },
     "eng.charity": {
       "primary": "FA Community Shield U.S. rights have moved between carriers; check ESPN Unlimited and Paramount+ listings in the days before kickoff.",
-      "check": "beIN Connect: Possible. ESPN Unlimited: Possible. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: No. Peacock/Telemundo: No. Paramount+: Possible."
+      "check": "beIN Connect: Possible. ESPN Unlimited: Possible. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: No. Peacock/Telemundo: No. Paramount+: Possible.",
+      "replay": "Depends on which carrier picks the match up. If it lands on a streaming service you subscribe to, expect an on-demand replay; if it airs only on a linear channel, record it to rewatch."
     },
     "esp.super_cup": {
       "primary": "Supercopa de España airs in the U.S. on ESPN Unlimited (ESPN+/ESPN Deportes).",
-      "check": "beIN Connect: No. ESPN Unlimited: Yes. Hulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear channel. HBO Max: No. Peacock/Telemundo: No. Paramount+: No."
+      "check": "beIN Connect: No. ESPN Unlimited: Yes. Hulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear channel. HBO Max: No. Peacock/Telemundo: No. Paramount+: No.",
+      "replay": "On demand in the ESPN app after the final whistle - no recording needed. Replays typically stay up for about three to four weeks."
     },
     "eng.fa": {
       "primary": "FA Cup matches stream in the U.S. on ESPN Unlimited, with selected ties on ESPN linear networks.",
-      "check": "beIN Connect: No. ESPN Unlimited: Yes. Hulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear channel. HBO Max: No. Peacock/Telemundo: No. Paramount+: No."
+      "check": "beIN Connect: No. ESPN Unlimited: Yes. Hulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear channel. HBO Max: No. Peacock/Telemundo: No. Paramount+: No.",
+      "replay": "On demand in the ESPN app after the final whistle - no recording needed. Replays typically stay up for about three to four weeks."
     },
     "eng.league_cup": {
       "primary": "Carabao Cup (EFL Cup) matches stream in the U.S. on Paramount+.",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only if a carrying CBS channel is included. HBO Max: No. Peacock/Telemundo: No. Paramount+: Yes."
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only if a carrying CBS channel is included. HBO Max: No. Peacock/Telemundo: No. Paramount+: Yes.",
+      "replay": "On demand on Paramount+ almost immediately after the final whistle, on any plan - no recording needed. Condensed replays are posted alongside it."
     },
     "esp.copa_del_rey": {
       "primary": "Copa del Rey streams in the U.S. on ESPN Unlimited.",
-      "check": "beIN Connect: No. ESPN Unlimited: Yes. Hulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear channel. HBO Max: No. Peacock/Telemundo: No. Paramount+: No."
+      "check": "beIN Connect: No. ESPN Unlimited: Yes. Hulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear channel. HBO Max: No. Peacock/Telemundo: No. Paramount+: No.",
+      "replay": "On demand in the ESPN app after the final whistle - no recording needed. Replays typically stay up for about three to four weeks."
     },
     "fifa.cwc": {
       "primary": "FIFA Club World Cup U.S. coverage has been on DAZN with select matches on linear partners; confirm nearer the tournament.",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Unlikely. HBO Max: No. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Unlikely. HBO Max: No. Peacock/Telemundo: Spanish-language possible. Paramount+: No.",
+      "replay": "Depends on which carrier picks the match up. If it lands on a streaming service you subscribe to, expect an on-demand replay; if it airs only on a linear channel, record it to rewatch."
     },
     "uefa.nations": {
-      "primary": "UEFA Nations League streams in the U.S. on HBO Max (English) and Peacock/Telemundo or ViX (Spanish), depending on the cycle's rights deal.",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+      "primary": "Fox Sports holds the U.S. rights; most midweek fixtures stream via Fox's sub-licensing partners, with marquee matches on FS1/FS2. Spanish-language coverage on ViX/Telemundo.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Yes, via included FOX/FS1/FS2 channels. HBO Max: Occasionally for select friendlies via TNT Sports. Peacock/Telemundo: Spanish-language possible. Paramount+: No.",
+      "replay": "Fox's streaming app carries its soccer coverage on demand; if this one lands only on FS1/FS2 through a pay-TV package, set a DVR recording (Hulu + Live TV or similar) to rewatch it."
     },
     "uefa.euroq": {
-      "primary": "UEFA national-team qualifying streams in the U.S. on HBO Max, with Spanish-language coverage on Peacock/Telemundo or ViX.",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+      "primary": "Fox Sports holds the U.S. rights; most midweek fixtures stream via Fox's sub-licensing partners, with marquee matches on FS1/FS2. Spanish-language coverage on ViX/Telemundo.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Yes, via included FOX/FS1/FS2 channels. HBO Max: Occasionally for select friendlies via TNT Sports. Peacock/Telemundo: Spanish-language possible. Paramount+: No.",
+      "replay": "Fox's streaming app carries its soccer coverage on demand; if this one lands only on FS1/FS2 through a pay-TV package, set a DVR recording (Hulu + Live TV or similar) to rewatch it."
     },
     "fifa.friendly": {
       "primary": "Friendly broadcast rights are sold per match by the host federation; check beIN Connect, ESPN Unlimited, HBO Max, and Paramount+ listings in the week of the match.",
-      "check": "beIN Connect: Possible. ESPN Unlimited: Possible. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Possible. Peacock/Telemundo: Possible. Paramount+: Possible."
+      "check": "beIN Connect: Possible. ESPN Unlimited: Possible. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Possible. Peacock/Telemundo: Possible. Paramount+: Possible.",
+      "replay": "Depends on which carrier picks the match up. If it lands on a streaming service you subscribe to, expect an on-demand replay; if it airs only on a linear channel, record it to rewatch."
     },
     "fifa.friendly.w": {
       "primary": "USWNT friendlies air in the U.S. on the USSF rights package (TNT/HBO Max family, with Spanish-language coverage on Universo/Peacock).",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included TNT/TBS channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included TNT/TBS channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No.",
+      "replay": "U.S. Soccer's rights partner usually posts a full-match replay on demand; if the match airs only on a linear TNT-family channel, record it."
     },
     "_default": {
       "primary": "U.S. rights for this competition are not mapped; check beIN Connect, ESPN Unlimited, Hulu + Live TV, HBO Max, Peacock/Telemundo, and Paramount+ listings in the week of the match.",
-      "check": "beIN Connect: Unknown. ESPN Unlimited: Unknown. Hulu: No direct stream. Hulu + Live TV: Unknown. HBO Max: Unknown. Peacock/Telemundo: Unknown. Paramount+: Unknown."
+      "check": "beIN Connect: Unknown. ESPN Unlimited: Unknown. Hulu: No direct stream. Hulu + Live TV: Unknown. HBO Max: Unknown. Peacock/Telemundo: Unknown. Paramount+: Unknown.",
+      "replay": "Unknown for this competition - check the carrier's on-demand library after the match, and record the broadcast if you need to be sure."
     },
     "concacaf.w.gold": {
       "primary": "Concacaf W competitions air in the U.S. across Paramount+ and the USSF rights partners; confirm per match.",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Possible. Peacock/Telemundo: Possible. Paramount+: Possible."
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Possible. Peacock/Telemundo: Possible. Paramount+: Possible.",
+      "replay": "Depends on which carrier picks the match up. If it lands on a streaming service you subscribe to, expect an on-demand replay; if it airs only on a linear channel, record it to rewatch."
     },
     "fifa.w.olympics": {
       "primary": "Olympic football in the U.S. is on the NBC family: Peacock streams every match, with Telemundo carrying Spanish-language coverage.",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included NBC/USA channel. HBO Max: No. Peacock/Telemundo: Yes. Paramount+: No."
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included NBC/USA channel. HBO Max: No. Peacock/Telemundo: Yes. Paramount+: No.",
+      "replay": "Peacock keeps every Olympic football match on demand for the duration of the Games and after - no recording needed."
     },
     "uefa.champions_qual": {
       "primary": "Paramount+ is the U.S. English-language home of UEFA club competitions; Spanish-language coverage on TUDN/ViX.",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only if a carrying CBS channel is included. HBO Max: No. Peacock/Telemundo: No. Paramount+: Yes."
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only if a carrying CBS channel is included. HBO Max: No. Peacock/Telemundo: No. Paramount+: Yes.",
+      "replay": "On demand on Paramount+ almost immediately after the final whistle, on any plan - no recording needed. Condensed replays are posted alongside it."
     },
     "generic.ussf": {
       "primary": "USWNT friendlies air in the U.S. on the USSF rights package (TNT/HBO Max family, with Spanish-language coverage on Universo/Peacock).",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included TNT/TBS channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included TNT/TBS channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No.",
+      "replay": "U.S. Soccer's rights partner usually posts a full-match replay on demand; if the match airs only on a linear TNT-family channel, record it."
     },
     "fifa.shebelieves": {
       "primary": "USWNT friendlies air in the U.S. on the USSF rights package (TNT/HBO Max family, with Spanish-language coverage on Universo/Peacock).",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included TNT/TBS channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included TNT/TBS channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No.",
+      "replay": "U.S. Soccer's rights partner usually posts a full-match replay on demand; if the match airs only on a linear TNT-family channel, record it."
     },
     "fifa.wwc": {
       "primary": "FIFA Women's World Cup U.S. rights sit with the Fox family (Fox/FS1) in English and Telemundo/Peacock in Spanish.",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Yes, via included Fox/FS1 channels. HBO Max: No. Peacock/Telemundo: Yes for Spanish-language. Paramount+: No."
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Yes, via included Fox/FS1 channels. HBO Max: No. Peacock/Telemundo: Yes for Spanish-language. Paramount+: No.",
+      "replay": "Fox's streaming app carries matches on demand in English and Peacock carries the Telemundo feed in Spanish. No recording needed."
     },
     "fifa.world": {
       "primary": "FIFA World Cup U.S. coverage is on Fox/FS1 in English and Telemundo/Peacock in Spanish.",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Yes, via included Fox/FS1 channels. HBO Max: No. Peacock/Telemundo: Yes for Spanish-language. Paramount+: No."
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Yes, via included Fox/FS1 channels. HBO Max: No. Peacock/Telemundo: Yes for Spanish-language. Paramount+: No.",
+      "replay": "Fox's streaming app carries every match on demand in English; Peacock carries the Telemundo Spanish-language stream on demand."
     },
     "fifa.worldq.uefa": {
-      "primary": "UEFA national-team qualifying streams in the U.S. on HBO Max, with Spanish-language coverage on Peacock/Telemundo or ViX.",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+      "primary": "Fox Sports holds the U.S. rights; most midweek fixtures stream via Fox's sub-licensing partners, with marquee matches on FS1/FS2. Spanish-language coverage on ViX/Telemundo.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Yes, via included FOX/FS1/FS2 channels. HBO Max: Occasionally for select friendlies via TNT Sports. Peacock/Telemundo: Spanish-language possible. Paramount+: No.",
+      "replay": "Fox's streaming app carries its soccer coverage on demand; if this one lands only on FS1/FS2 through a pay-TV package, set a DVR recording (Hulu + Live TV or similar) to rewatch it."
     },
     "uefa.euro": {
-      "primary": "UEFA national-team qualifying streams in the U.S. on HBO Max, with Spanish-language coverage on Peacock/Telemundo or ViX.",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Yes. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+      "primary": "Fox Sports holds the U.S. rights; most midweek fixtures stream via Fox's sub-licensing partners, with marquee matches on FS1/FS2. Spanish-language coverage on ViX/Telemundo.",
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Yes, via included FOX/FS1/FS2 channels. HBO Max: Occasionally for select friendlies via TNT Sports. Peacock/Telemundo: Spanish-language possible. Paramount+: No.",
+      "replay": "Fox's streaming app carries its soccer coverage on demand; if this one lands only on FS1/FS2 through a pay-TV package, set a DVR recording (Hulu + Live TV or similar) to rewatch it."
     },
     "club.friendly": {
       "primary": "Preseason club friendlies are sold per match; many stream on ESPN Unlimited or the clubs' own platforms.",
-      "check": "beIN Connect: Possible. ESPN Unlimited: Possible. Hulu: No direct stream. Hulu + Live TV: Unlikely. HBO Max: No. Peacock/Telemundo: Possible. Paramount+: Possible."
+      "check": "beIN Connect: Possible. ESPN Unlimited: Possible. Hulu: No direct stream. Hulu + Live TV: Unlikely. HBO Max: No. Peacock/Telemundo: Possible. Paramount+: Possible.",
+      "replay": "Preseason friendlies are often geo-limited one-offs and frequently have no replay at all. If you care about rewatching, record it live."
     },
     "fifa.intercontinental_cup": {
       "primary": "FIFA Club World Cup U.S. coverage has been on DAZN with select matches on linear partners; confirm nearer the tournament.",
-      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Unlikely. HBO Max: No. Peacock/Telemundo: Spanish-language possible. Paramount+: No."
+      "check": "beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV: Unlikely. HBO Max: No. Peacock/Telemundo: Spanish-language possible. Paramount+: No.",
+      "replay": "Depends on which carrier picks the match up. If it lands on a streaming service you subscribe to, expect an on-demand replay; if it airs only on a linear channel, record it to rewatch."
     },
     "global.finalissima": {
       "primary": "Friendly broadcast rights are sold per match by the host federation; check beIN Connect, ESPN Unlimited, HBO Max, and Paramount+ listings in the week of the match.",
-      "check": "beIN Connect: Possible. ESPN Unlimited: Possible. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Possible. Peacock/Telemundo: Possible. Paramount+: Possible."
+      "check": "beIN Connect: Possible. ESPN Unlimited: Possible. Hulu: No direct stream. Hulu + Live TV: Only via an included linear channel. HBO Max: Possible. Peacock/Telemundo: Possible. Paramount+: Possible.",
+      "replay": "Depends on which carrier picks the match up. If it lands on a streaming service you subscribe to, expect an on-demand replay; if it airs only on a linear channel, record it to rewatch."
     }
   }
 }

@@ -683,6 +683,7 @@ def build_description(fx: Fixture, bmap: dict) -> str:
     entry = bmap.get(fx.comp_key) or bmap.get("_default", {})
     bits = [f"Competition: {fx.comp_name}"]
     bits.append(f"U.S. streaming/broadcast: {entry.get('primary','')}")
+    bits.append(f"Replay: {entry.get('replay') or bmap.get('_default', {}).get('replay','')}")
     bits.append(f"Requested-service check: {entry.get('check','')}")
     if fx.broadcasts:
         bits.append("ESPN-listed carriers: " + ", ".join(fx.broadcasts))

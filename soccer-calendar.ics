@@ -4056,7 +4056,7 @@ X-SOCCERCAL-FP:82db1090ae30
 END:VEVENT
 BEGIN:VEVENT
 UID:6a2d719f15ac033b8218b190@soccer-calendar.local
-DTSTAMP:20260820T010142Z
+DTSTAMP:20260915T020113Z
 SUMMARY:Barcelona vs Atlético Madrid
 CATEGORIES:Supercopa de España
 DTSTART;TZID=America/New_York:20270202T150000
@@ -4064,19 +4064,22 @@ DTEND;TZID=America/New_York:20270202T170000
 LOCATION:Atatürk Olimpiyat\, Istanbul\, Türkiye
 DESCRIPTION:Competition: Supercopa de España\nU.S. streaming/broadcast: Su
  percopa de España airs in the U.S. on ESPN Unlimited (ESPN+/ESPN Deportes
- ).\nRequested-service check: beIN Connect: No. ESPN Unlimited: Yes. Hulu: 
- No direct stream. Hulu + Live TV: Only via an included ESPN linear channel
- . HBO Max: No. Peacock/Telemundo: No. Paramount+: No.\nSchedule note: kick
- off time not yet confirmed\; verify closer to the date.\nSource: ESPN fixt
- ure feed\, refreshed daily.
+ ).\nReplay: On demand in the ESPN app after the final whistle - no recordi
+ ng needed. Replays typically stay up for about three to four weeks.\nReque
+ sted-service check: beIN Connect: No. ESPN Unlimited: Yes. Hulu: No direct
+  stream. Hulu + Live TV: Only via an included ESPN linear channel. HBO Max
+ : No. Peacock/Telemundo: No. Paramount+: No.\nSchedule note: kickoff time 
+ not yet confirmed\; verify closer to the date.\nSource: ESPN fixture feed\
+ , refreshed daily.
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
+SEQUENCE:1
 X-SOCCERCAL-COMP:esp.super_cup
-X-SOCCERCAL-FP:b22562239277
+X-SOCCERCAL-FP:b5f4c20ea57b
 END:VEVENT
 BEGIN:VEVENT
 UID:43093bd1936b8cc93251b4e6@soccer-calendar.local
-DTSTAMP:20260820T010142Z
+DTSTAMP:20260915T020113Z
 SUMMARY:Real Sociedad vs Real Madrid
 CATEGORIES:Supercopa de España
 DTSTART;TZID=America/New_York:20270202T150000
@@ -4084,15 +4087,18 @@ DTEND;TZID=America/New_York:20270202T170000
 LOCATION:Atatürk Olimpiyat\, Istanbul\, Türkiye
 DESCRIPTION:Competition: Supercopa de España\nU.S. streaming/broadcast: Su
  percopa de España airs in the U.S. on ESPN Unlimited (ESPN+/ESPN Deportes
- ).\nRequested-service check: beIN Connect: No. ESPN Unlimited: Yes. Hulu: 
- No direct stream. Hulu + Live TV: Only via an included ESPN linear channel
- . HBO Max: No. Peacock/Telemundo: No. Paramount+: No.\nSchedule note: kick
- off time not yet confirmed\; verify closer to the date.\nSource: ESPN fixt
- ure feed\, refreshed daily.
+ ).\nReplay: On demand in the ESPN app after the final whistle - no recordi
+ ng needed. Replays typically stay up for about three to four weeks.\nReque
+ sted-service check: beIN Connect: No. ESPN Unlimited: Yes. Hulu: No direct
+  stream. Hulu + Live TV: Only via an included ESPN linear channel. HBO Max
+ : No. Peacock/Telemundo: No. Paramount+: No.\nSchedule note: kickoff time 
+ not yet confirmed\; verify closer to the date.\nSource: ESPN fixture feed\
+ , refreshed daily.
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
+SEQUENCE:1
 X-SOCCERCAL-COMP:esp.super_cup
-X-SOCCERCAL-FP:5071bc485765
+X-SOCCERCAL-FP:c07eb1f2e6e1
 END:VEVENT
 BEGIN:VEVENT
 UID:42ddcccc03b7d293296f19d4@soccer-calendar.local

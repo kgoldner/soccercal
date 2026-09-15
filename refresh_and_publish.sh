@@ -16,6 +16,8 @@ export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin
 cd "$REPO" || { echo "cannot cd to $REPO"; exit 1; }
 
 echo "=== $(date '+%Y-%m-%d %H:%M:%S') refresh start"
+# Pick up anything pushed from elsewhere first; never rewrite local work.
+git pull -q --ff-only origin main || echo "warning: could not fast-forward from origin; continuing"
 if ! /usr/bin/python3 soccer_cal.py --calendar "$CAL" --verbose; then
     echo "refresh FAILED; calendar not published"
     exit 1

@@ -43,79 +43,49 @@ below.
 
 ---
 
-## Option A — GitHub Actions (recommended)
+## How it publishes
 
-Runs on GitHub's servers whether or not your Mac is on, and gives Fantastical an
-HTTPS URL, which it refreshes far more reliably than a local file.
+A launchd job on this Mac (`com.soccercal.refresh`) runs
+`refresh_and_publish.sh` at 07:15 local time daily. That script:
 
-The repo has to be **public** for the calendar URL to work without an auth
-token. That means the fixture list is world-readable. It's football fixtures, so
-low stakes, but it is public.
+1. fast-forwards this checkout from GitHub,
+2. runs `soccer_cal.py --calendar soccer-calendar.ics --verbose`,
+3. if the refresh exited 0 **and** the .ics actually changed, commits just
+   that file and pushes to https://github.com/kgoldner/soccercal.
 
-This folder is already a git repo with everything committed. From
-`~/soccercal`:
-
-```bash
-# 1. Create the repo on GitHub (or create it in the web UI and skip to step 2)
-gh repo create soccer-calendar --public --source=. --remote=origin --push
-
-# 2. If you made it in the web UI instead:
-git remote add origin https://github.com/<you>/soccer-calendar.git
-git branch -M main
-git push -u origin main
-```
-
-Then:
-
-3. Open the repo's **Actions** tab → *Refresh soccer calendar* → **Run
-   workflow**. Watch it once. The log prints, per competition, which slug
-   resolved and how many fixtures came back. **Read that output** — see
-   *First run* below.
-4. Subscribe in Fantastical: File → New Calendar Subscription →
-
-   ```
-   https://raw.githubusercontent.com/<you>/soccer-calendar/main/soccer-calendar.ics
-   ```
-
-   Set auto-refresh to daily or hourly. The file advertises a 12-hour TTL.
-
-The Action runs at 07:15 UTC daily and only commits when fixtures actually
-changed, so the history stays readable.
-
----
-
-## Option B — local Mac, via launchd
-
-Nothing leaves your machine, but it only runs when the Mac is awake. The plist
-already has the correct paths filled in for this folder.
+If the Mac is asleep at 07:15, launchd runs it once on the next wake. Logs
+land in `~/Library/Logs/soccercal.log` and `.err` — check those first if the
+calendar ever goes stale. Run it by hand any time:
 
 ```bash
-cp ~/soccercal/com.soccercal.refresh.plist ~/Library/LaunchAgents/
-launchctl load ~/Library/LaunchAgents/com.soccercal.refresh.plist
-
-# force one run right now to confirm it works
-launchctl start com.soccercal.refresh
-cat ~/Library/Logs/soccercal.err
+~/soccercal/refresh_and_publish.sh
 ```
+
+## Subscribing on your devices
+
+Subscribe (do not import) to this URL in Apple Calendar, Fantastical, Google
+Calendar, etc. Every device pulls the same file, so it stays in sync:
+
+```
+https://raw.githubusercontent.com/kgoldner/soccercal/main/soccer-calendar.ics
+```
+
+- **iPhone / iPad:** Settings → Apps → Calendar → Accounts → Add Account →
+  Other → Add Subscribed Calendar → paste the URL.
+- **Mac Calendar:** File → New Calendar Subscription → paste the URL, set
+  auto-refresh to every hour or every day, location iCloud so it syncs to
+  every device signed into your Apple ID.
+- **Google Calendar:** Other calendars → + → From URL.
+
+Never pass `public/soccer-calendar.ics` to `--calendar`: it is a symlink to
+the top-level file and the script's atomic rename would replace the link.
 
 **This folder must stay out of `~/Documents`.** macOS privacy protection blocks
 scheduled background jobs from reading `~/Documents`, `~/Desktop` and
 `~/Downloads`. A launchd run there fails with `Operation not permitted` while
-the identical command works in Terminal, because your Terminal has been granted
-that access and launchd has not. The alternative — granting Full Disk Access to
-`/usr/bin/python3` — would hand that permission to every Python script you ever
-run, which is why this uses an unprotected folder instead.
+the identical command works in Terminal.
 
-It runs at 07:15 local time. If the Mac is asleep then, launchd runs it once on
-the next wake rather than skipping the day. Logs land in
-`~/Library/Logs/soccercal.log` and `.err` — check those first if the calendar
-ever goes stale.
-
-Fantastical can subscribe to a local file, but its refresh behaviour is less
-dependable than a URL. If you go this route, consider putting the `.ics` in
-iCloud Drive and subscribing to its share link.
-
-To stop it: `launchctl unload ~/Library/LaunchAgents/com.soccercal.refresh.plist`
+To stop it: `launchctl bootout gui/$(id -u)/com.soccercal.refresh`
 
 ---
 

@@ -15,11 +15,8 @@
        back into Documents. -->
   <key>ProgramArguments</key>
   <array>
-    <string>/usr/bin/python3</string>
-    <string>/Users/kgoldner/soccercal/soccer_cal.py</string>
-    <string>--calendar</string>
-    <string>/Users/kgoldner/soccercal/soccer-calendar.ics</string>
-    <string>--verbose</string>
+    <string>/bin/bash</string>
+    <string>/Users/kgoldner/soccercal/refresh_and_publish.sh</string>
   </array>
   <key>WorkingDirectory</key>
   <string>/Users/kgoldner/soccercal</string>

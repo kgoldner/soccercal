@@ -1154,6 +1154,30 @@ X-SOCCERCAL-COMP:esp.1
 X-SOCCERCAL-FP:ac6835b22a15
 END:VEVENT
 BEGIN:VEVENT
+UID:55b3476ab93cb410aeef8469@soccer-calendar.local
+DTSTAMP:20260917T111507Z
+SUMMARY:England vs Croatia
+CATEGORIES:UEFA Nations League
+DTSTART;TZID=America/New_York:20261112T144500
+DTEND;TZID=America/New_York:20261112T164500
+LOCATION:Wembley Stadium\, London\, England
+DESCRIPTION:Competition: UEFA Nations League\nU.S. streaming/broadcast: Fox
+  Sports holds the U.S. rights\; most midweek fixtures stream via Fox's sub
+ -licensing partners\, with marquee matches on FS1/FS2. Spanish-language co
+ verage on ViX/Telemundo.\nReplay: Fox's streaming app carries its soccer c
+ overage on demand\; if this one lands only on FS1/FS2 through a pay-TV pac
+ kage\, set a DVR recording (Hulu + Live TV or similar) to rewatch it.\nReq
+ uested-service check: beIN Connect: No. ESPN Unlimited: No. Hulu: No direc
+ t stream. Hulu + Live TV: Yes\, via included FOX/FS1/FS2 channels. HBO Max
+ : Occasionally for select friendlies via TNT Sports. Peacock/Telemundo: Sp
+ anish-language possible. Paramount+: No.\nSource: ESPN fixture feed\, refr
+ eshed daily.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+X-SOCCERCAL-COMP:uefa.nations
+X-SOCCERCAL-FP:c91bece0a7c3
+END:VEVENT
+BEGIN:VEVENT
 UID:35d4ed42b3ed01b61eea0251@soccer-calendar.local
 DTSTAMP:20260825T125045Z
 SUMMARY:Liverpool vs Manchester United

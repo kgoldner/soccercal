@@ -963,31 +963,6 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:c2373e9554425fc0917387b5@soccer-calendar.local
-DTSTAMP:20260919T111504Z
-SUMMARY:Manchester United vs Tottenham Hotspur
-CATEGORIES:Premier League
-DTSTART;TZID=America/New_York:20261010T123000
-DTEND;TZID=America/New_York:20261010T143000
-LOCATION:Old Trafford\, Manchester\, England
-DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
- Telemundo: availability varies by match\; USA/NBC linear matches can also 
- be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
- to kickoff.\nReplay: Peacock posts full-match replays of matches it stream
- s or that air on NBC\, usually shortly after full time. Matches carried on
-  USA Network\, CNBC or Syfy are currently absent from Peacock's replay lib
- rary after the Versant spin-off - for those\, record the linear broadcast 
- (DVR via Hulu + Live TV or similar) to rewatch.\nRequested-service check: 
- beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live 
- TV: Only when carried on an included NBC/USA/Telemundo channel. HBO Max: N
- o. Peacock/Telemundo: Yes\, subject to the per-match assignment. Paramount
- +: No.\nSource: ESPN fixture feed\, refreshed daily.
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
-X-SOCCERCAL-FP:65cdfc1728cc
-END:VEVENT
-BEGIN:VEVENT
 UID:2dde69aea4cddac4130ae6f0@soccer-calendar.local
 DTSTAMP:20260825T125045Z
 SUMMARY:United States vs Spain

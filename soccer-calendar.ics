@@ -75,33 +75,6 @@ X-SOCCERCAL-COMP:eng.1
 X-SOCCERCAL-FP:442edf4f5f55
 END:VEVENT
 BEGIN:VEVENT
-UID:847db6ede4e37944e9abc1be@soccer-calendar.local
-DTSTAMP:20260825T125045Z
-SUMMARY:Hull City vs Manchester United
-CATEGORIES:Premier League
-DTSTART;TZID=America/New_York:20260822T073000
-DTEND;TZID=America/New_York:20260822T093000
-LOCATION:The MKM Stadium\, Hull\, England
-DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
- Telemundo: availability varies by match\; USA/NBC linear matches can also 
- be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
- to kickoff.\nReplay: Peacock posts full-match replays of matches it stream
- s or that air on NBC\, usually shortly after full time. Matches carried on
-  USA Network\, CNBC or Syfy are currently absent from Peacock's replay lib
- rary after the Versant spin-off - for those\, record the linear broadcast 
- (DVR via Hulu + Live TV or similar) to rewatch.\nRequested-service check: 
- beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live 
- TV: Only when carried on an included NBC/USA/Telemundo channel. HBO Max: N
- o. Peacock/Telemundo: Yes\, subject to the per-match assignment. Paramount
- +: No.\nESPN-listed carriers: USA Net\, Universo\nSource: ESPN fixture fee
- d\, refreshed daily.
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-SEQUENCE:2
-X-SOCCERCAL-COMP:eng.1
-X-SOCCERCAL-FP:bf30d1207d9a
-END:VEVENT
-BEGIN:VEVENT
 UID:83550d4936ccda34462a0e38@soccer-calendar.local
 DTSTAMP:20260825T125045Z
 SUMMARY:Espanyol vs Real Madrid
@@ -245,33 +218,6 @@ X-SOCCERCAL-COMP:esp.1
 X-SOCCERCAL-FP:82044155c7c9
 END:VEVENT
 BEGIN:VEVENT
-UID:1d60bd06e9cea7f4d658f3ad@soccer-calendar.local
-DTSTAMP:20260826T112621Z
-SUMMARY:Manchester United vs Ipswich Town
-CATEGORIES:Premier League
-DTSTART;TZID=America/New_York:20260830T113000
-DTEND;TZID=America/New_York:20260830T133000
-LOCATION:Old Trafford\, Manchester\, England
-DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
- Telemundo: availability varies by match\; USA/NBC linear matches can also 
- be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
- to kickoff.\nReplay: Peacock posts full-match replays of matches it stream
- s or that air on NBC\, usually shortly after full time. Matches carried on
-  USA Network\, CNBC or Syfy are currently absent from Peacock's replay lib
- rary after the Versant spin-off - for those\, record the linear broadcast 
- (DVR via Hulu + Live TV or similar) to rewatch.\nRequested-service check: 
- beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live 
- TV: Only when carried on an included NBC/USA/Telemundo channel. HBO Max: N
- o. Peacock/Telemundo: Yes\, subject to the per-match assignment. Paramount
- +: No.\nESPN-listed carriers: USA Net\, Tele\nSource: ESPN fixture feed\, 
- refreshed daily.
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-SEQUENCE:3
-X-SOCCERCAL-COMP:eng.1
-X-SOCCERCAL-FP:2286ad2a2458
-END:VEVENT
-BEGIN:VEVENT
 UID:fc33a2da040d6029886da69a@soccer-calendar.local
 DTSTAMP:20260826T112621Z
 SUMMARY:Aston Villa vs Arsenal
@@ -347,33 +293,6 @@ TRANSP:TRANSPARENT
 SEQUENCE:3
 X-SOCCERCAL-COMP:eng.1
 X-SOCCERCAL-FP:22d5799b0fa9
-END:VEVENT
-BEGIN:VEVENT
-UID:a1530a91983ab4d5c3206ffc@soccer-calendar.local
-DTSTAMP:20260826T112621Z
-SUMMARY:Everton vs Manchester United
-CATEGORIES:Premier League
-DTSTART;TZID=America/New_York:20260906T090000
-DTEND;TZID=America/New_York:20260906T110000
-LOCATION:Hill Dickinson Stadium\, Liverpool\, England
-DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
- Telemundo: availability varies by match\; USA/NBC linear matches can also 
- be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
- to kickoff.\nReplay: Peacock posts full-match replays of matches it stream
- s or that air on NBC\, usually shortly after full time. Matches carried on
-  USA Network\, CNBC or Syfy are currently absent from Peacock's replay lib
- rary after the Versant spin-off - for those\, record the linear broadcast 
- (DVR via Hulu + Live TV or similar) to rewatch.\nRequested-service check: 
- beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live 
- TV: Only when carried on an included NBC/USA/Telemundo channel. HBO Max: N
- o. Peacock/Telemundo: Yes\, subject to the per-match assignment. Paramount
- +: No.\nESPN-listed carriers: USA Net\, Tele\nSource: ESPN fixture feed\, 
- refreshed daily.
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-SEQUENCE:3
-X-SOCCERCAL-COMP:eng.1
-X-SOCCERCAL-FP:5c3ca1bf7dfc
 END:VEVENT
 BEGIN:VEVENT
 UID:f2a34d68117a0cab93667e15@soccer-calendar.local
@@ -557,28 +476,6 @@ X-SOCCERCAL-COMP:uefa.champions
 X-SOCCERCAL-FP:8798c1c39567
 END:VEVENT
 BEGIN:VEVENT
-UID:79e30f54add83ad267a684dc@soccer-calendar.local
-DTSTAMP:20260830T111504Z
-SUMMARY:Manchester United vs Sabah FK
-CATEGORIES:UEFA Champions League
-DTSTART;TZID=America/New_York:20260910T150000
-DTEND;TZID=America/New_York:20260910T170000
-LOCATION:Old Trafford\, Manchester\, England
-DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
- aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
- anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
- st immediately after the final whistle\, on any plan - no recording needed
- . Condensed replays are posted alongside it.\nRequested-service check: beI
- N Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live TV:
-  Only if a carrying CBS channel is included. HBO Max: No. Peacock/Telemund
- o: No. Paramount+: Yes.\nESPN-listed carriers: Paramount+\nSource: ESPN fi
- xture feed\, refreshed daily.
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
-X-SOCCERCAL-FP:67f19bdefcc4
-END:VEVENT
-BEGIN:VEVENT
 UID:4089c9124ac234f10dca606a@soccer-calendar.local
 DTSTAMP:20260909T111504Z
 SUMMARY:Sunderland vs Arsenal
@@ -700,28 +597,6 @@ X-SOCCERCAL-COMP:esp.1
 X-SOCCERCAL-FP:736750d08f53
 END:VEVENT
 BEGIN:VEVENT
-UID:0b4b257d7bc7600104740827@soccer-calendar.local
-DTSTAMP:20260906T111503Z
-SUMMARY:Manchester United vs Brighton & Hove Albion
-CATEGORIES:Carabao Cup
-DTSTART;TZID=America/New_York:20260916T150000
-DTEND;TZID=America/New_York:20260916T170000
-LOCATION:Old Trafford\, Manchester\, England
-DESCRIPTION:Competition: Carabao Cup\nU.S. streaming/broadcast: Carabao Cup
-  (EFL Cup) matches stream in the U.S. on Paramount+.\nReplay: On demand on
-  Paramount+ almost immediately after the final whistle\, on any plan - no 
- recording needed. Condensed replays are posted alongside it.\nRequested-se
- rvice check: beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream.
-  Hulu + Live TV: Only if a carrying CBS channel is included. HBO Max: No. 
- Peacock/Telemundo: No. Paramount+: Yes.\nESPN-listed carriers: Paramount+\
- nSource: ESPN fixture feed\, refreshed daily.
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-SEQUENCE:1
-X-SOCCERCAL-COMP:eng.league_cup
-X-SOCCERCAL-FP:80fedfe78ac2
-END:VEVENT
-BEGIN:VEVENT
 UID:dd722ae07ceb156a63d2fcee@soccer-calendar.local
 DTSTAMP:20260906T111503Z
 SUMMARY:Manchester City vs Norwich City
@@ -816,32 +691,6 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 X-SOCCERCAL-COMP:esp.1
 X-SOCCERCAL-FP:73310c80e5b0
-END:VEVENT
-BEGIN:VEVENT
-UID:d11689334d2a5b1835e4d01b@soccer-calendar.local
-DTSTAMP:20260919T111504Z
-SUMMARY:Fulham vs Manchester United
-CATEGORIES:Premier League
-DTSTART;TZID=America/New_York:20260920T113000
-DTEND;TZID=America/New_York:20260920T133000
-LOCATION:Craven Cottage\, London\, England
-DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
- Telemundo: availability varies by match\; USA/NBC linear matches can also 
- be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
- to kickoff.\nReplay: Peacock posts full-match replays of matches it stream
- s or that air on NBC\, usually shortly after full time. Matches carried on
-  USA Network\, CNBC or Syfy are currently absent from Peacock's replay lib
- rary after the Versant spin-off - for those\, record the linear broadcast 
- (DVR via Hulu + Live TV or similar) to rewatch.\nRequested-service check: 
- beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live 
- TV: Only when carried on an included NBC/USA/Telemundo channel. HBO Max: N
- o. Peacock/Telemundo: Yes\, subject to the per-match assignment. Paramount
- +: No.\nESPN-listed carriers: NBC\, Tele\nSource: ESPN fixture feed\, refr
- eshed daily.
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
-X-SOCCERCAL-FP:c274e6b0d52a
 END:VEVENT
 BEGIN:VEVENT
 UID:c236d5f62f713e9ddf4d63fd@soccer-calendar.local
@@ -1347,26 +1196,6 @@ X-SOCCERCAL-COMP:eng.1
 X-SOCCERCAL-FP:98cb1d9f4cde
 END:VEVENT
 BEGIN:VEVENT
-UID:ed7ae1e3cf7509fe908e5eca@soccer-calendar.local
-DTSTAMP:20260814T030537Z
-SUMMARY:Leeds United vs Manchester United
-CATEGORIES:Premier League
-DTSTART;TZID=America/New_York:20261017T100000
-DTEND;TZID=America/New_York:20261017T120000
-DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
- Telemundo: availability varies by match\; USA/NBC linear matches can also 
- be watched through Hulu + Live TV. Exact U.S. assignment not yet announced
- .\nRequested-service check: beIN Connect: No. ESPN Unlimited: No. Hulu: No
-  direct stream. Hulu + Live TV: Only when carried on an included NBC/USA/T
- elemundo channel. HBO Max: No. Peacock/Telemundo: Yes\, subject to the per
- -match assignment. Paramount+: No.\nSchedule note: Kickoff time is provisi
- onal and may move for UK television/competition scheduling.\nSource: https
- ://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premi
- er-league-season
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:8093ccc1e16f0a4b45d692cb@soccer-calendar.local
 DTSTAMP:20260814T030537Z
 SUMMARY:Nottingham Forest vs Arsenal
@@ -1592,26 +1421,6 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 X-SOCCERCAL-COMP:eng.1
 X-SOCCERCAL-FP:aa6236498085
-END:VEVENT
-BEGIN:VEVENT
-UID:76caa3e2d50c6215ba5e6e37@soccer-calendar.local
-DTSTAMP:20260814T030537Z
-SUMMARY:Manchester United vs AFC Bournemouth
-CATEGORIES:Premier League
-DTSTART;TZID=America/New_York:20261024T100000
-DTEND;TZID=America/New_York:20261024T120000
-DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
- Telemundo: availability varies by match\; USA/NBC linear matches can also 
- be watched through Hulu + Live TV. Exact U.S. assignment not yet announced
- .\nRequested-service check: beIN Connect: No. ESPN Unlimited: No. Hulu: No
-  direct stream. Hulu + Live TV: Only when carried on an included NBC/USA/T
- elemundo channel. HBO Max: No. Peacock/Telemundo: Yes\, subject to the per
- -match assignment. Paramount+: No.\nSchedule note: Kickoff time is provisi
- onal and may move for UK television/competition scheduling.\nSource: https
- ://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premi
- er-league-season
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:64fa0d07454f694c3bc4713d@soccer-calendar.local

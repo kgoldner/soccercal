@@ -376,18 +376,27 @@ def _collect(url: str, comp: dict, into: dict) -> int:
 
 def sweep_competition(comp: dict, slug: str, payload: dict,
                       start: datetime, end: datetime, budget: list,
-                      comps_left: int = 1) -> list:
+                      comps_left: int = 1, status: "dict | None" = None) -> list:
     """Collect every fixture for a competition inside the window.
 
-    Range queries (dates=YYYYMMDD-YYYYMMDD) work for most competitions and
-    are far cheaper than one request per day, so they are the default. The
+    Whole-month queries (dates=YYYYMM) return every fixture in that month in
+    one request, so they are the default. Explicit ranges
+    (dates=YYYYMMDD-YYYYMMDD) used to work too, but ESPN began answering
+    them with HTTP 400 on 2026-09-16; only the month form survived. The
     per-date fallback exists because ESPN's scoreboard uses a whitelist
-    calendar and a few competitions ignore ranges — but it is only engaged
-    on positive evidence (see the probe below), never on a bare zero.
+    calendar and a few competitions ignore month queries — but it is only
+    engaged on positive evidence (see the probe below), never on a bare zero.
 
     Each competition gets at most a fair share of the remaining budget, so
-    one greedy competition cannot starve the ones after it.
+    one greedy competition cannot starve the ones after it. If the share
+    runs out before every window was swept, ``status["complete"]`` is set
+    False; the caller must NOT prune on a partial sweep, or every fixture
+    beyond the swept window looks like it left the feed (that pruned 173
+    events on 2026-09-16).
     """
+    if status is None:
+        status = {}
+    status["complete"] = True
     seen: dict = {}
     windows = calendar_windows(payload, start, end)
     if not windows:
@@ -411,10 +420,15 @@ def sweep_competition(comp: dict, slug: str, payload: dict,
         if not take():
             log(f"    ! request share exhausted for {slug} "
                 f"(used {share - spend[0]} of {share})", 2)
+            status["complete"] = False
             break
 
         before = len(seen)
-        _collect(f"{ESPN_BASE}/{slug}/scoreboard?dates={w_start}-{w_end}&limit=800",
+        if w_start[:6] == w_end[:6]:
+            dates = w_start[:6]                  # whole calendar month
+        else:
+            dates = f"{w_start}-{w_end}"         # legacy range form
+        _collect(f"{ESPN_BASE}/{slug}/scoreboard?dates={dates}&limit=800",
                  comp, seen)
         time.sleep(0.25)
         gained = len(seen) - before
@@ -449,6 +463,7 @@ def sweep_competition(comp: dict, slug: str, payload: dict,
             cur = d0 + timedelta(days=1)  # day 0 already fetched by the probe
             while cur <= d1:
                 if not take():
+                    status["complete"] = False
                     break
                 _collect(f"{ESPN_BASE}/{slug}/scoreboard?dates="
                          f"{cur.strftime('%Y%m%d')}&limit=500", comp, seen)
@@ -893,12 +908,16 @@ def main() -> int:
             log(f"  – {comp['name']}: no working slug, skipped")
             continue
         spent_before = budget[0]
+        status: dict = {}
         found = sweep_competition(comp, slug, payload, start, end, budget,
-                                  comps_left=len(comps) - i)
+                                  comps_left=len(comps) - i, status=status)
         used = spent_before - budget[0]
         kept = [fx for fx in found if keep_fixture(fx, comp["rule"], cfg["teams"])]
-        if found:
+        if found and status.get("complete", False):
             fetched_ok.add(comp["key"])
+        elif found:
+            log(f"    ! partial sweep for {comp['name']}: existing events in "
+                f"this competition are preserved, not pruned", 2)
         log(f"  ✓ {comp['name']} [{slug}]: {len(found)} fixtures, {len(kept)} kept "
             f"({used} requests, budget left {budget[0]})")
         fixtures.extend(kept)

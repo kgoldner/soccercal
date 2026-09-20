@@ -61,6 +61,11 @@ def dates_param(url):
     return url.split("dates=")[1].split("&")[0]
 
 
+def is_bulk(d):
+    """A whole-month (YYYYMM) or explicit-range query, as opposed to one day."""
+    return len(d) == 6 or "-" in d
+
+
 # ---------------------------------------------------------------------------
 print("\n[1] A long {startDate,endDate} span becomes windows, not 400 days")
 # This is the exact shape that made Nations League cost 328 requests.
@@ -112,7 +117,7 @@ payload = payload_with_calendar([
 
 def responder_ranges_work(url):
     d = dates_param(url)
-    if "-" in d:  # range query returns the month's fixtures
+    if is_bulk(d):  # range query returns the month's fixtures
         return {"events": [fixture_event(f"r{d}", "2026-09-05T19:00Z")]}
     return {"events": []}
 
@@ -121,8 +126,8 @@ urls = install_stub(responder_ranges_work)
 budget = [900]
 found = sweep_competition_result = sc.sweep_competition(
     COMP, "test.slug", payload, START, END, budget, comps_left=26)
-check("all requests were ranges", all("-" in dates_param(u) for u in urls),
-      f"{sum(1 for u in urls if '-' not in dates_param(u))} single-date requests")
+check("all requests were ranges", all(is_bulk(dates_param(u)) for u in urls),
+      f"{sum(1 for u in urls if not is_bulk(dates_param(u)))} single-date requests")
 check("cost stayed under 15 requests", len(urls) < 15, f"used {len(urls)}")
 check("fixtures were collected", len(found) >= 1, f"got {len(found)}")
 
@@ -135,7 +140,7 @@ urls = install_stub(lambda url: {"events": []})
 budget = [900]
 found = sc.sweep_competition(COMP, "test.slug", payload, START, END, budget,
                              comps_left=26)
-single = sum(1 for u in urls if "-" not in dates_param(u))
+single = sum(1 for u in urls if not is_bulk(dates_param(u)))
 check("found nothing, correctly", len(found) == 0, f"got {len(found)}")
 check("spent well under the old 174", len(urls) < 20, f"used {len(urls)}")
 check("probing is bounded, not once per window", single <= 3,
@@ -148,7 +153,7 @@ print("\n[4] Genuinely broken range queries ARE detected and fall back")
 
 def responder_ranges_broken(url):
     d = dates_param(url)
-    if "-" in d:
+    if is_bulk(d):
         return {"events": []}          # ranges silently return nothing
     return {"events": [fixture_event(f"d{d}", "2026-09-05T19:00Z", away=f"Team{d[-2:]}")]}
 
@@ -157,7 +162,7 @@ urls = install_stub(responder_ranges_broken)
 budget = [900]
 found = sc.sweep_competition(COMP, "test.slug", payload, START, END, budget,
                              comps_left=26)
-single = sum(1 for u in urls if "-" not in dates_param(u))
+single = sum(1 for u in urls if not is_bulk(dates_param(u)))
 check("fell back to per-date fetching", single > 5, f"only {single} single-date requests")
 check("fixtures recovered via fallback", len(found) > 1, f"got {len(found)}")
 
@@ -203,7 +208,37 @@ budget = [900]
 found = sc.sweep_competition(COMP, "test.slug", {"leagues": [{}]}, START, END,
                              budget, comps_left=26)
 check("still swept by month", len(urls) > 0 and len(urls) <= 14, f"used {len(urls)}")
-check("all month sweeps were ranges", all("-" in dates_param(u) for u in urls))
+check("all month sweeps were ranges", all(is_bulk(dates_param(u)) for u in urls))
+
+
+# ---------------------------------------------------------------------------
+print("\n[7] A sweep cut short by its budget share reports itself incomplete")
+# 2026-09-16: ESPN started rejecting ranges, the per-date fallback exhausted
+# its share after ~2 weeks, and merge() pruned 173 future fixtures as
+# "no longer in the feed". The caller must be told the sweep was partial.
+install_stub(responder_ranges_broken)
+budget = [900]
+status = {}
+found = sc.sweep_competition(COMP, "test.slug", payload, START, END, budget,
+                             comps_left=26, status=status)
+check("partial sweep still returns what it found", len(found) > 0)
+check("partial sweep is flagged incomplete", status.get("complete") is False,
+      str(status))
+
+install_stub(responder_ranges_work)
+budget = [900]
+status = {}
+sc.sweep_competition(COMP, "test.slug", payload, START, END, budget,
+                     comps_left=26, status=status)
+check("full sweep is flagged complete", status.get("complete") is True, str(status))
+
+print("\n[8] Whole-month windows are requested as dates=YYYYMM")
+urls = install_stub(responder_ranges_work)
+budget = [900]
+sc.sweep_competition(COMP, "test.slug", payload, START, END, budget, comps_left=26)
+months = [dates_param(u) for u in urls if is_bulk(dates_param(u))]
+check("month windows use the six-digit form", months and all(len(m) == 6 for m in months),
+      str(months[:3]))
 
 
 print()

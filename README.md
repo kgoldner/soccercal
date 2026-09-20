@@ -180,6 +180,15 @@ Neither needs the network.
 
 Worth knowing before you change anything in `soccer_cal.py`:
 
+**Ask for whole months, not date ranges.** On 2026-09-16 ESPN started
+answering every `dates=YYYYMMDD-YYYYMMDD` query with HTTP 400 ("Failed to get
+events endpoint"). `dates=YYYYMM` still returns the whole month in one
+request, so that is what the sweep sends now. The failure mode was nasty: the
+per-date fallback exhausted each competition's request share after about two
+weeks, and the merge then pruned every fixture beyond that window as "no
+longer in the feed" — 173 events gone in one run. A sweep that runs out of
+budget is now reported as partial and never prunes.
+
 **Don't set a User-Agent.** ESPN returns HTTP 403 for any User-Agent string it
 doesn't recognise — including `soccer-cal/1.0`, and including a full Chrome
 string. Python's own default (`Python-urllib/3.x`) is accepted, so the script

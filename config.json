@@ -68,19 +68,6 @@
       "espn_league_hint": "eng.1",
       "follow": "domestic_and_ucl"
     },
-    "man_united": {
-      "label": "Manchester United",
-      "match_names": [
-        "manchester united",
-        "man united",
-        "man utd"
-      ],
-      "exclude_names": [
-        "women"
-      ],
-      "espn_league_hint": "eng.1",
-      "follow": "domestic_and_ucl"
-    },
     "arsenal": {
       "label": "Arsenal",
       "match_names": [

@@ -1424,11 +1424,11 @@ X-SOCCERCAL-FP:aa6236498085
 END:VEVENT
 BEGIN:VEVENT
 UID:64fa0d07454f694c3bc4713d@soccer-calendar.local
-DTSTAMP:20260920T222545Z
+DTSTAMP:20260922T111507Z
 SUMMARY:Barcelona vs Real Madrid
 CATEGORIES:LaLiga
-DTSTART;TZID=America/New_York:20261025T140000
-DTEND;TZID=America/New_York:20261025T160000
+DTSTART;TZID=America/New_York:20261025T160000
+DTEND;TZID=America/New_York:20261025T180000
 LOCATION:Spotify Camp Nou\, Barcelona\, Spain
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
@@ -1437,13 +1437,13 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nRequested-service check: beIN Connect: No. ESPN Unlimited: Yes. H
  ulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear ch
  annel for simulcast matches. HBO Max: No. Peacock/Telemundo: No. Paramount
- +: No.\nESPN-listed carriers: ABC\, ESPN Deportes\, ESPN+\nSchedule note: 
- kickoff time not yet confirmed\; verify closer to the date.\nSource: ESPN 
- fixture feed\, refreshed daily.
+ +: No.\nESPN-listed carriers: ABC\, ESPN Deportes\, ESPN+\nSource: ESPN fi
+ xture feed\, refreshed daily.
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
+SEQUENCE:1
 X-SOCCERCAL-COMP:esp.1
-X-SOCCERCAL-FP:4faf541a1cc8
+X-SOCCERCAL-FP:48aa0351a966
 END:VEVENT
 BEGIN:VEVENT
 UID:274552c2369aa5816eecce14@soccer-calendar.local
@@ -1761,11 +1761,11 @@ X-SOCCERCAL-FP:e0153d60c4d2
 END:VEVENT
 BEGIN:VEVENT
 UID:f16075aa21126e552dfbee14@soccer-calendar.local
-DTSTAMP:20260920T222545Z
+DTSTAMP:20260922T111507Z
 SUMMARY:Nottingham Forest vs Manchester City
 CATEGORIES:Premier League
-DTSTART;TZID=America/New_York:20261107T100000
-DTEND;TZID=America/New_York:20261107T120000
+DTSTART;TZID=America/New_York:20261107T123000
+DTEND;TZID=America/New_York:20261107T143000
 LOCATION:The City Ground\, Nottingham\, England
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
@@ -1781,8 +1781,9 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  +: No.\nSource: ESPN fixture feed\, refreshed daily.
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
+SEQUENCE:1
 X-SOCCERCAL-COMP:eng.1
-X-SOCCERCAL-FP:3bce90fd3fcc
+X-SOCCERCAL-FP:7cf49ed0e137
 END:VEVENT
 BEGIN:VEVENT
 UID:ca60ccf4c174f8dd8663f9fe@soccer-calendar.local
@@ -1881,11 +1882,11 @@ X-SOCCERCAL-FP:80d8a9165771
 END:VEVENT
 BEGIN:VEVENT
 UID:82cffb0f38cc1beea12a22f2@soccer-calendar.local
-DTSTAMP:20260920T222545Z
+DTSTAMP:20260922T111507Z
 SUMMARY:Manchester City vs Fulham
 CATEGORIES:Premier League
-DTSTART;TZID=America/New_York:20261121T100000
-DTEND;TZID=America/New_York:20261121T120000
+DTSTART;TZID=America/New_York:20261121T073000
+DTEND;TZID=America/New_York:20261121T093000
 LOCATION:Etihad Stadium\, Manchester\, England
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
@@ -1901,16 +1902,17 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  +: No.\nSource: ESPN fixture feed\, refreshed daily.
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
+SEQUENCE:1
 X-SOCCERCAL-COMP:eng.1
-X-SOCCERCAL-FP:533c00d2cd9c
+X-SOCCERCAL-FP:5c774c440831
 END:VEVENT
 BEGIN:VEVENT
 UID:cf7c2133b6748463a06b1d34@soccer-calendar.local
-DTSTAMP:20260920T222545Z
+DTSTAMP:20260922T111507Z
 SUMMARY:Newcastle United vs Arsenal
 CATEGORIES:Premier League
-DTSTART;TZID=America/New_York:20261121T100000
-DTEND;TZID=America/New_York:20261121T120000
+DTSTART;TZID=America/New_York:20261121T123000
+DTEND;TZID=America/New_York:20261121T143000
 LOCATION:St. James' Park\, Newcastle-upon-Tyne\, England
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
@@ -1926,8 +1928,9 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  +: No.\nSource: ESPN fixture feed\, refreshed daily.
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
+SEQUENCE:1
 X-SOCCERCAL-COMP:eng.1
-X-SOCCERCAL-FP:948ba703bc77
+X-SOCCERCAL-FP:39dd49e228a3
 END:VEVENT
 BEGIN:VEVENT
 UID:babf6a38ee96b248d6edebab@soccer-calendar.local
@@ -2107,12 +2110,12 @@ X-SOCCERCAL-COMP:uefa.champions
 X-SOCCERCAL-FP:f198a040dd93
 END:VEVENT
 BEGIN:VEVENT
-UID:af84797ed29285b793e3e5d0@soccer-calendar.local
-DTSTAMP:20260920T222545Z
+UID:8b97bf0f8ebfda888e299174@soccer-calendar.local
+DTSTAMP:20260922T111507Z
 SUMMARY:Arsenal vs Manchester City
 CATEGORIES:Premier League
-DTSTART;TZID=America/New_York:20261128T100000
-DTEND;TZID=America/New_York:20261128T120000
+DTSTART;TZID=America/New_York:20261129T113000
+DTEND;TZID=America/New_York:20261129T133000
 LOCATION:Emirates Stadium\, London\, England
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
@@ -2129,7 +2132,7 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 X-SOCCERCAL-COMP:eng.1
-X-SOCCERCAL-FP:2602abf9c550
+X-SOCCERCAL-FP:565fac9db963
 END:VEVENT
 BEGIN:VEVENT
 UID:85b49d29d0f77b04b072c6a7@soccer-calendar.local

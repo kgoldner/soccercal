@@ -766,7 +766,7 @@ X-SOCCERCAL-FP:8fe345fb3629
 END:VEVENT
 BEGIN:VEVENT
 UID:2c174a5768a392273083ecd2@soccer-calendar.local
-DTSTAMP:20260920T222545Z
+DTSTAMP:20260923T111506Z
 SUMMARY:Spain vs Croatia
 CATEGORIES:UEFA Nations League
 DTSTART;TZID=America/New_York:20260929T144500
@@ -781,12 +781,13 @@ DESCRIPTION:Competition: UEFA Nations League\nU.S. streaming/broadcast: Fox
  uested-service check: beIN Connect: No. ESPN Unlimited: No. Hulu: No direc
  t stream. Hulu + Live TV: Yes\, via included FOX/FS1/FS2 channels. HBO Max
  : Occasionally for select friendlies via TNT Sports. Peacock/Telemundo: Sp
- anish-language possible. Paramount+: No.\nSource: ESPN fixture feed\, refr
- eshed daily.
+ anish-language possible. Paramount+: No.\nESPN-listed carriers: FS1\nSourc
+ e: ESPN fixture feed\, refreshed daily.
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
+SEQUENCE:1
 X-SOCCERCAL-COMP:uefa.nations
-X-SOCCERCAL-FP:b1d647a5f52e
+X-SOCCERCAL-FP:d8b382953194
 END:VEVENT
 BEGIN:VEVENT
 UID:1447a0d2f6e171e41fc1f405@soccer-calendar.local

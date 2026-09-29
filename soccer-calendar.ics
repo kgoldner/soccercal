@@ -952,7 +952,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:26fdb99cd1c79acadefb6795@soccer-calendar.local
-DTSTAMP:20260918T111503Z
+DTSTAMP:20260929T112906Z
 SUMMARY:Real Madrid vs Villarreal
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20261010T150000
@@ -965,12 +965,13 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nRequested-service check: beIN Connect: No. ESPN Unlimited: Yes. H
  ulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear ch
  annel for simulcast matches. HBO Max: No. Peacock/Telemundo: No. Paramount
- +: No.\nESPN-listed carriers: ESPN+\nSource: ESPN fixture feed\, refreshed
-  daily.
+ +: No.\nESPN-listed carriers: ESPN Deportes\, ESPN+\nSource: ESPN fixture 
+ feed\, refreshed daily.
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
+SEQUENCE:1
 X-SOCCERCAL-COMP:esp.1
-X-SOCCERCAL-FP:4a2ae632225c
+X-SOCCERCAL-FP:ad3075f3dac9
 END:VEVENT
 BEGIN:VEVENT
 UID:9dc6467a26420a08a7afa084@soccer-calendar.local

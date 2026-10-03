@@ -1535,6 +1535,29 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:86065c0c707c00cb310c0ac6@soccer-calendar.local
+DTSTAMP:20261003T111951Z
+SUMMARY:Racing Santander vs Real Madrid
+CATEGORIES:LaLiga
+DTSTART;TZID=America/New_York:20261101T101500
+DTEND;TZID=America/New_York:20261101T121500
+LOCATION:El Sardineros\, Santander\, Spain
+DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
+ ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
+ n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
+ e - no recording needed. Replays typically stay up for about three to four
+  weeks.\nRequested-service check: beIN Connect: No. ESPN Unlimited: Yes. H
+ ulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear ch
+ annel for simulcast matches. HBO Max: No. Peacock/Telemundo: No. Paramount
+ +: No.\nESPN-listed carriers: ESPN+\nSource: ESPN fixture feed\, refreshed
+  daily.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:1
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:03a119906e99
+END:VEVENT
+BEGIN:VEVENT
 UID:28ee4dc6b9943447802aa8cb@soccer-calendar.local
 DTSTAMP:20260920T222545Z
 SUMMARY:Liverpool vs Arsenal
@@ -1558,29 +1581,6 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 X-SOCCERCAL-COMP:eng.1
 X-SOCCERCAL-FP:0f62382d0d37
-END:VEVENT
-BEGIN:VEVENT
-UID:86065c0c707c00cb310c0ac6@soccer-calendar.local
-DTSTAMP:20260920T222545Z
-SUMMARY:Racing Santander vs Real Madrid
-CATEGORIES:LaLiga
-DTSTART;TZID=America/New_York:20261101T150000
-DTEND;TZID=America/New_York:20261101T170000
-LOCATION:El Sardineros\, Santander\, Spain
-DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
- ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
- n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
- e - no recording needed. Replays typically stay up for about three to four
-  weeks.\nRequested-service check: beIN Connect: No. ESPN Unlimited: Yes. H
- ulu: No direct stream. Hulu + Live TV: Only via an included ESPN linear ch
- annel for simulcast matches. HBO Max: No. Peacock/Telemundo: No. Paramount
- +: No.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet c
- onfirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refresh
- ed daily.
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
-X-SOCCERCAL-FP:21d327a49a66
 END:VEVENT
 BEGIN:VEVENT
 UID:e749f2b3bc2a845d05a143b9@soccer-calendar.local

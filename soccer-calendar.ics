@@ -866,7 +866,7 @@ X-SOCCERCAL-FP:e1e1d9336d30
 END:VEVENT
 BEGIN:VEVENT
 UID:30c84ed6d05b2c1448754f89@soccer-calendar.local
-DTSTAMP:20260919T111504Z
+DTSTAMP:20261007T111506Z
 SUMMARY:Arsenal vs Leeds United
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261010T073000
@@ -883,11 +883,13 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live 
  TV: Only when carried on an included NBC/USA/Telemundo channel. HBO Max: N
  o. Peacock/Telemundo: Yes\, subject to the per-match assignment. Paramount
- +: No.\nSource: ESPN fixture feed\, refreshed daily.
+ +: No.\nESPN-listed carriers: USA Net\, Universo\nSource: ESPN fixture fee
+ d\, refreshed daily.
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
+SEQUENCE:1
 X-SOCCERCAL-COMP:eng.1
-X-SOCCERCAL-FP:f1c2e2ff8d5b
+X-SOCCERCAL-FP:d568eb9f937e
 END:VEVENT
 BEGIN:VEVENT
 UID:48aa39e7cc67abaae2ef3d40@soccer-calendar.local
@@ -976,7 +978,7 @@ X-SOCCERCAL-FP:ad3075f3dac9
 END:VEVENT
 BEGIN:VEVENT
 UID:9dc6467a26420a08a7afa084@soccer-calendar.local
-DTSTAMP:20260919T111504Z
+DTSTAMP:20261007T111506Z
 SUMMARY:Liverpool vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261011T113000
@@ -993,11 +995,13 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live 
  TV: Only when carried on an included NBC/USA/Telemundo channel. HBO Max: N
  o. Peacock/Telemundo: Yes\, subject to the per-match assignment. Paramount
- +: No.\nSource: ESPN fixture feed\, refreshed daily.
+ +: No.\nESPN-listed carriers: NBC\, Tele\nSource: ESPN fixture feed\, refr
+ eshed daily.
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
+SEQUENCE:1
 X-SOCCERCAL-COMP:eng.1
-X-SOCCERCAL-FP:74c64e4e67b3
+X-SOCCERCAL-FP:17c0a53227f7
 END:VEVENT
 BEGIN:VEVENT
 UID:6511d106edd4c2956e538586@soccer-calendar.local
@@ -1175,7 +1179,7 @@ X-SOCCERCAL-FP:ea6cb739392f
 END:VEVENT
 BEGIN:VEVENT
 UID:1f58db49a36ff48b7d145fab@soccer-calendar.local
-DTSTAMP:20260920T222545Z
+DTSTAMP:20261007T111506Z
 SUMMARY:Manchester City vs Ipswich Town
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261017T100000
@@ -1192,11 +1196,13 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  beIN Connect: No. ESPN Unlimited: No. Hulu: No direct stream. Hulu + Live 
  TV: Only when carried on an included NBC/USA/Telemundo channel. HBO Max: N
  o. Peacock/Telemundo: Yes\, subject to the per-match assignment. Paramount
- +: No.\nSource: ESPN fixture feed\, refreshed daily.
+ +: No.\nESPN-listed carriers: USA Net\, Universo\nSource: ESPN fixture fee
+ d\, refreshed daily.
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
+SEQUENCE:1
 X-SOCCERCAL-COMP:eng.1
-X-SOCCERCAL-FP:98cb1d9f4cde
+X-SOCCERCAL-FP:0cf06c2c950f
 END:VEVENT
 BEGIN:VEVENT
 UID:8093ccc1e16f0a4b45d692cb@soccer-calendar.local

@@ -21,9 +21,9 @@ have. Past events already in the file are left untouched.
 | UEFA Super Cup | always |
 | Domestic super cups | when a tracked club is involved |
 
-Each event carries the competition, U.S. streaming availability, and a
-per-service verdict for beIN Connect, ESPN Unlimited, Hulu / Hulu + Live TV,
-HBO Max, Peacock/Telemundo, and Paramount+. Times are `America/New_York`.
+Each event carries the competition, U.S. streaming availability, and
+event-specific carriers when listed. Negative per-service checks are omitted;
+uncertain match assignments remain explicitly qualified. Times are `America/New_York`.
 No alarms are ever written.
 
 ## What's in this folder
@@ -136,8 +136,10 @@ future.
   from scratch, so a wrong `--calendar` path can't quietly discard your history.
 - Events are only pruned if they are in the future *and* belong to a competition
   that fetched successfully this run. A failed competition can't delete anything.
-- Events keep a stable `UID` derived from competition + teams + date, so a
-  kickoff-time change **moves** the existing event instead of duplicating it.
+- Events retain their existing `UID`. ESPN fixture IDs are saved and matched
+  within each competition, so a date change moves the same identified fixture
+  instead of duplicating it. Legacy events without an ESPN ID still use the
+  team-pair-and-date fallback until refreshed.
   Your original 155 events use opaque UIDs and are matched by team-pair-and-date
   instead, so they update rather than duplicate.
 - `DTSTAMP` and `SEQUENCE` only advance when content actually changed, so

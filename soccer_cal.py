@@ -699,7 +699,8 @@ def build_description(fx: Fixture, bmap: dict) -> str:
     bits = [f"Competition: {fx.comp_name}"]
     bits.append(f"U.S. streaming/broadcast: {entry.get('primary','')}")
     bits.append(f"Replay: {entry.get('replay') or bmap.get('_default', {}).get('replay','')}")
-    bits.append(f"Requested-service check: {entry.get('check','')}")
+    # Report event-specific carriers positively; the primary note retains
+    # honest uncertainty when a match assignment has not been published.
     if fx.broadcasts:
         bits.append("ESPN-listed carriers: " + ", ".join(fx.broadcasts))
     if not fx.time_confirmed:
@@ -725,6 +726,7 @@ def event_lines(fx: Fixture, cfg: dict, tz: ZoneInfo, dtstamp: str,
 
     lines = [
         f"UID:{fx.uid()}",
+        f"X-SOCCERCAL-ESPN-ID:{fx.espn_id}",
         f"DTSTAMP:{dtstamp}",
         f"SUMMARY:{esc(fx.summary())}",
         f"CATEGORIES:{esc(fx.comp_name)}",
@@ -797,6 +799,12 @@ def merge(cfg: dict, fixtures: list, existing: dict, fetched_ok: set,
         if lk:
             existing_by_legacy.setdefault(lk, uid)
 
+    existing_by_source = {}
+    for ev in existing.values():
+        source_id = _prop(ev.lines, "X-SOCCERCAL-ESPN-ID")
+        if source_id and ev.comp_key:
+            existing_by_source[(ev.comp_key, source_id)] = ev
+
     stats = MergeStats()
     blocks = []  # (sort_datetime, lines)
     consumed = set()
@@ -804,6 +812,10 @@ def merge(cfg: dict, fixtures: list, existing: dict, fetched_ok: set,
     for fx in fixtures:
         uid = fx.uid()
         prior = existing.get(uid)
+        if prior is None and fx.espn_id:
+            prior = existing_by_source.get((fx.comp_key, fx.espn_id))
+            if prior:
+                consumed.add(prior.uid)
         if prior is None:
             lk = fx.legacy_key()
             prior_uid = existing_by_legacy.get(lk)
@@ -835,6 +847,23 @@ def merge(cfg: dict, fixtures: list, existing: dict, fetched_ok: set,
                 f"added:   {fx.start_utc.astimezone(tz):%Y-%m-%d %H:%M} "
                 f"{fx.summary()} ({fx.comp_name})"
             )
+        if prior is not None:
+            # Retain subscription identity across date changes.
+            lines = [f"UID:{prior.uid}" if l.startswith("UID:") else l for l in lines]
+            # Preserve user-owned event metadata and official links.
+            previous_notes = _prop(prior.lines, "DESCRIPTION").split("\\n")
+            generated_labels = ("Competition:", "U.S. streaming/broadcast:",
+                                "Replay:", "Requested-service check:",
+                                "ESPN-listed carriers:", "Schedule note:",
+                                "Source: ESPN fixture feed")
+            extra_notes = [note for note in previous_notes if note
+                           and not note.startswith(generated_labels)]
+            if extra_notes:
+                lines = [l + "\\n" + "\\n".join(extra_notes)
+                         if l.startswith("DESCRIPTION:") else l for l in lines]
+            managed = {l.split(":", 1)[0].split(";", 1)[0] for l in lines}
+            lines.extend(l for l in prior.lines
+                         if l.split(":", 1)[0].split(";", 1)[0] not in managed)
         blocks.append((fx.start_utc, lines))
 
     # Existing events that the refresh did not produce.

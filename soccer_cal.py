@@ -630,6 +630,25 @@ def _build_existing(lines: list, tz: ZoneInfo) -> ExistingEvent:
     )
 
 
+def uswnt_alias_key(summary: str, start: "datetime | None", women: bool) -> str:
+    """Match the explicit USWNT alias only in women's fixtures at exact kickoff.
+
+    The gender and instant guards keep men's matches and separate legs apart.
+    """
+    if not start:
+        return ""
+    sides = re.split(r"\s+vs\.?\s+|\s+v\s+", summary, flags=re.I)
+    if len(sides) != 2:
+        return ""
+    names = [normalize(side) for side in sides]
+    if "uswnt" in names:
+        women = True
+    if not women or not any(n in {"uswnt", "united states"} for n in names):
+        return ""
+    names = ["united states" if n == "uswnt" else n for n in names]
+    return "|".join(sorted(names)) + "|" + start.astimezone(timezone.utc).isoformat()
+
+
 def existing_legacy_key(ev: ExistingEvent) -> str:
     """Team-pair + date key so events written by the original generator
     (opaque UIDs) can be recognised and replaced rather than duplicated."""
@@ -799,6 +818,14 @@ def merge(cfg: dict, fixtures: list, existing: dict, fetched_ok: set,
         if lk:
             existing_by_legacy.setdefault(lk, uid)
 
+    existing_by_uswnt_alias = {}
+    for ev in existing.values():
+        key = uswnt_alias_key(ev.summary, ev.start,
+                              "women" in ev.categories.lower()
+                              or ev.comp_key == "fifa.friendly.w")
+        if key:
+            existing_by_uswnt_alias.setdefault(key, []).append(ev)
+
     existing_by_source = {}
     for ev in existing.values():
         source_id = _prop(ev.lines, "X-SOCCERCAL-ESPN-ID")
@@ -826,6 +853,22 @@ def merge(cfg: dict, fixtures: list, existing: dict, fetched_ok: set,
         else:
             consumed.add(uid)
 
+        alias_key = uswnt_alias_key(fx.summary(), fx.start_utc,
+                                    "women" in fx.comp_name.lower()
+                                    or fx.comp_key == "fifa.friendly.w")
+        alias_matches = existing_by_uswnt_alias.get(alias_key, [])
+        if prior is None and alias_matches:
+            prior = alias_matches[0]
+        duplicate_notes = []
+        for alias in alias_matches:
+            if (alias.uid != getattr(prior, "uid", None)
+                    and alias.uid not in new_by_uid
+                    and not _prop(alias.lines, "X-SOCCERCAL-ESPN-ID")):
+                consumed.add(alias.uid)
+                duplicate_notes.extend(_prop(alias.lines, "DESCRIPTION").split("\\n"))
+        if prior:
+            consumed.add(prior.uid)
+
         # The core rule: never insert a fixture that has already kicked off.
         if fx.start_utc < cutoff and prior is None:
             stats.skipped_past += 1
@@ -851,13 +894,13 @@ def merge(cfg: dict, fixtures: list, existing: dict, fetched_ok: set,
             # Retain subscription identity across date changes.
             lines = [f"UID:{prior.uid}" if l.startswith("UID:") else l for l in lines]
             # Preserve user-owned event metadata and official links.
-            previous_notes = _prop(prior.lines, "DESCRIPTION").split("\\n")
+            previous_notes = _prop(prior.lines, "DESCRIPTION").split("\\n") + duplicate_notes
             generated_labels = ("Competition:", "U.S. streaming/broadcast:",
                                 "Replay:", "Requested-service check:",
                                 "ESPN-listed carriers:", "Schedule note:",
                                 "Source: ESPN fixture feed")
-            extra_notes = [note for note in previous_notes if note
-                           and not note.startswith(generated_labels)]
+            extra_notes = list(dict.fromkeys(note for note in previous_notes if note
+                           and not note.startswith(generated_labels)))
             if extra_notes:
                 lines = [l + "\\n" + "\\n".join(extra_notes)
                          if l.startswith("DESCRIPTION:") else l for l in lines]

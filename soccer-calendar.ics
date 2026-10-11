@@ -761,25 +761,11 @@ DESCRIPTION:Competition: Women's International Friendly\nU.S. streaming/bro
  ay: U.S. Soccer's rights partner usually posts a full-match replay on dema
  nd\; if the match airs only on a linear TNT-family channel\, record it.\nE
  SPN-listed carriers: TBS\, Tele\, Universo\, HBO Max\, Peacock\nSource: ES
- PN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:2
-END:VEVENT
-BEGIN:VEVENT
-UID:8fa127b7214dcb1010f03cbc@soccer-calendar.local
-SUMMARY:USWNT vs Spain
-CATEGORIES:International Friendly
-DTSTART;TZID=America/New_York:20261010T143000
-DTEND;TZID=America/New_York:20261010T163000
-LOCATION:Audi Field\, Washington\, DC
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-DESCRIPTION:Competition: International Friendly\nU.S. streaming/broadcast: 
- HBO Max (English)\; Peacock/Telemundo/Universo (Spanish)\; TBS also carrie
- s the match.\nSource: https://www.ussoccer.com/stories/2026/07/uswnt/us-wo
- mens-national-team-vs-spain-two-october-matches-washington-dc-chester-pa
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+ PN fixture feed\, refreshed daily.\nSource: https://www.ussoccer.com/stori
+ es/2026/07/uswnt/us-womens-national-team-vs-spain-two-october-matches-wash
+ ington-dc-chester-pa
+DTSTAMP:20261011T003336Z
+SEQUENCE:3
 END:VEVENT
 BEGIN:VEVENT
 UID:26fdb99cd1c79acadefb6795@soccer-calendar.local

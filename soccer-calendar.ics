@@ -665,14 +665,13 @@ SEQUENCE:2
 END:VEVENT
 BEGIN:VEVENT
 UID:1447a0d2f6e171e41fc1f405@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401861113
+DTSTAMP:20261011T111611Z
 SUMMARY:Croatia vs England
 CATEGORIES:UEFA Nations League
 DTSTART;TZID=America/New_York:20261003T120000
 DTEND;TZID=America/New_York:20261003T140000
 LOCATION:Stadion HNK Rijeka\, Rijeka\, Croatia
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.nations
 DESCRIPTION:Competition: UEFA Nations League\nU.S. streaming/broadcast: Fox
   Sports holds the U.S. rights\; most midweek fixtures stream via Fox's sub
  -licensing partners\, with marquee matches on FS1/FS2. Spanish-language co
@@ -680,19 +679,21 @@ DESCRIPTION:Competition: UEFA Nations League\nU.S. streaming/broadcast: Fox
  overage on demand\; if this one lands only on FS1/FS2 through a pay-TV pac
  kage\, set a DVR recording (Hulu + Live TV or similar) to rewatch it.\nSou
  rce: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:3
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:4
+X-SOCCERCAL-COMP:uefa.nations
+X-SOCCERCAL-FP:ee1826f000f1
 END:VEVENT
 BEGIN:VEVENT
 UID:9f376efc762e3c15baaa1a41@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401861137
+DTSTAMP:20261011T111611Z
 SUMMARY:Croatia vs Spain
 CATEGORIES:UEFA Nations League
 DTSTART;TZID=America/New_York:20261006T144500
 DTEND;TZID=America/New_York:20261006T164500
 LOCATION:Stadion Poljud\, Split\, Croatia
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.nations
 DESCRIPTION:Competition: UEFA Nations League\nU.S. streaming/broadcast: Fox
   Sports holds the U.S. rights\; most midweek fixtures stream via Fox's sub
  -licensing partners\, with marquee matches on FS1/FS2. Spanish-language co
@@ -700,19 +701,21 @@ DESCRIPTION:Competition: UEFA Nations League\nU.S. streaming/broadcast: Fox
  overage on demand\; if this one lands only on FS1/FS2 through a pay-TV pac
  kage\, set a DVR recording (Hulu + Live TV or similar) to rewatch it.\nSou
  rce: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:3
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:4
+X-SOCCERCAL-COMP:uefa.nations
+X-SOCCERCAL-FP:d53cc0271880
 END:VEVENT
 BEGIN:VEVENT
 UID:a717267140258d5d54e48f3a@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401861142
+DTSTAMP:20261011T111611Z
 SUMMARY:England vs Czechia
 CATEGORIES:UEFA Nations League
 DTSTART;TZID=America/New_York:20261006T144500
 DTEND;TZID=America/New_York:20261006T164500
 LOCATION:Wembley Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.nations
 DESCRIPTION:Competition: UEFA Nations League\nU.S. streaming/broadcast: Fox
   Sports holds the U.S. rights\; most midweek fixtures stream via Fox's sub
  -licensing partners\, with marquee matches on FS1/FS2. Spanish-language co
@@ -720,19 +723,21 @@ DESCRIPTION:Competition: UEFA Nations League\nU.S. streaming/broadcast: Fox
  overage on demand\; if this one lands only on FS1/FS2 through a pay-TV pac
  kage\, set a DVR recording (Hulu + Live TV or similar) to rewatch it.\nESP
  N-listed carriers: FS2\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:2
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:3
+X-SOCCERCAL-COMP:uefa.nations
+X-SOCCERCAL-FP:21df9dde1ef3
 END:VEVENT
 BEGIN:VEVENT
 UID:30c84ed6d05b2c1448754f89@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879268
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Leeds United
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261010T073000
 DTEND;TZID=America/New_York:20261010T093000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -742,19 +747,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nESPN-listed carriers: USA
   Net\, Universo\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:2
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:3
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:b0c9dd6bd235
 END:VEVENT
 BEGIN:VEVENT
 UID:2dde69aea4cddac4130ae6f0@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401890785
+DTSTAMP:20261011T111611Z
 SUMMARY:United States vs Spain
 CATEGORIES:Women's International Friendly
 DTSTART;TZID=America/New_York:20261010T143000
 DTEND;TZID=America/New_York:20261010T163000
 LOCATION:Audi Field\, Washington\, District of Columbia\, USA
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:fifa.friendly.w
 DESCRIPTION:Competition: Women's International Friendly\nU.S. streaming/bro
  adcast: USWNT friendlies air in the U.S. on the USSF rights package (TNT/H
  BO Max family\, with Spanish-language coverage on Universo/Peacock).\nRepl
@@ -764,38 +771,42 @@ DESCRIPTION:Competition: Women's International Friendly\nU.S. streaming/bro
  PN fixture feed\, refreshed daily.\nSource: https://www.ussoccer.com/stori
  es/2026/07/uswnt/us-womens-national-team-vs-spain-two-october-matches-wash
  ington-dc-chester-pa
-DTSTAMP:20261011T003336Z
-SEQUENCE:3
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:4
+X-SOCCERCAL-COMP:fifa.friendly.w
+X-SOCCERCAL-FP:578fa58b45e6
 END:VEVENT
 BEGIN:VEVENT
 UID:26fdb99cd1c79acadefb6795@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882848
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Villarreal
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20261010T150000
 DTEND;TZID=America/New_York:20261010T170000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
  e - no recording needed. Replays typically stay up for about three to four
   weeks.\nESPN-listed carriers: ESPN Deportes\, ESPN+\nSource: ESPN fixture
   feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:2
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:3
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:a1107eb6f006
 END:VEVENT
 BEGIN:VEVENT
 UID:9dc6467a26420a08a7afa084@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879264
+DTSTAMP:20261011T111611Z
 SUMMARY:Liverpool vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261011T113000
 DTEND;TZID=America/New_York:20261011T133000
 LOCATION:Anfield\, Liverpool\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -808,76 +819,84 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
   Sunday October 11 at 4.30pm BST (11:30am EDT).\nOfficial schedule source:
   https://www.liverpoolfc.com/news/fixture-updates-new-dates-anfield-games-
  against-man-city-and-arsenal
-DTSTAMP:20261010T120301Z
-SEQUENCE:2
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:3
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:b37c3c20da72
 END:VEVENT
 BEGIN:VEVENT
 UID:6511d106edd4c2956e538586@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915417
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Lille
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261013T150000
 DTEND;TZID=America/New_York:20261013T170000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:5561c2cd701e
 END:VEVENT
 BEGIN:VEVENT
 UID:738e945e2d3cc8b68b4fa908@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915435
+DTSTAMP:20261011T111611Z
 SUMMARY:Galatasaray vs Barcelona
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261013T150000
 DTEND;TZID=America/New_York:20261013T170000
 LOCATION:RAMS Park\, Istanbul\, Türkiye
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:90cf2adfa4e7
 END:VEVENT
 BEGIN:VEVENT
 UID:d47ce669770d63a804ecf2d4@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915411
+DTSTAMP:20261011T111611Z
 SUMMARY:Viking FK vs Bayern Munich
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261013T150000
 DTEND;TZID=America/New_York:20261013T170000
 LOCATION:Viking Stadion\, Stavanger\, Norway
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:779f4d587c7d
 END:VEVENT
 BEGIN:VEVENT
 UID:405b77ac79f6999c61c128ec@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401890784
+DTSTAMP:20261011T111611Z
 SUMMARY:United States vs Spain
 CATEGORIES:Women's International Friendly
 DTSTART;TZID=America/New_York:20261013T190000
 DTEND;TZID=America/New_York:20261013T210000
 LOCATION:Subaru Park\, Chester\, Pennsylvania\, USA
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:fifa.friendly.w
 DESCRIPTION:Competition: Women's International Friendly\nU.S. streaming/bro
  adcast: USWNT friendlies air in the U.S. on the USSF rights package (TNT/H
  BO Max family\, with Spanish-language coverage on Universo/Peacock).\nRepl
@@ -887,76 +906,84 @@ DESCRIPTION:Competition: Women's International Friendly\nU.S. streaming/bro
  ure feed\, refreshed daily.\nSource: https://www.ussoccer.com/stories/2026
  /07/uswnt/us-womens-national-team-vs-spain-two-october-matches-washington-
  dc-chester-pa
-DTSTAMP:20261011T003538Z
-SEQUENCE:3
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:4
+X-SOCCERCAL-COMP:fifa.friendly.w
+X-SOCCERCAL-FP:565410f34e85
 END:VEVENT
 BEGIN:VEVENT
 UID:595ad89a0e5f2973dfb298a3@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915415
+DTSTAMP:20261011T111611Z
 SUMMARY:LASK Linz vs Liverpool
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261014T124500
 DTEND;TZID=America/New_York:20261014T144500
 LOCATION:Raiffeisen Arena (Linz)\, Linz\, Austria
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:eae3e2a5522c
 END:VEVENT
 BEGIN:VEVENT
 UID:9e234ff4a6ea921c34cfd164@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915414
+DTSTAMP:20261011T111611Z
 SUMMARY:AS Roma vs Real Madrid
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261014T150000
 DTEND;TZID=America/New_York:20261014T170000
 LOCATION:Olimpico\, Roma\, Italy
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:fca9c460cefa
 END:VEVENT
 BEGIN:VEVENT
 UID:1138b0016cac7b41d1c238fd@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915407
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Paris Saint-Germain
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261014T150000
 DTEND;TZID=America/New_York:20261014T170000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:327638f64718
 END:VEVENT
 BEGIN:VEVENT
 UID:1f58db49a36ff48b7d145fab@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879259
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Ipswich Town
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261017T100000
 DTEND;TZID=America/New_York:20261017T120000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -966,8 +993,11 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nESPN-listed carriers: USA
   Net\, Universo\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:2
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:3
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:d49a8dccc5b9
 END:VEVENT
 BEGIN:VEVENT
 UID:8093ccc1e16f0a4b45d692cb@soccer-calendar.local
@@ -988,14 +1018,13 @@ SEQUENCE:1
 END:VEVENT
 BEGIN:VEVENT
 UID:86c1baad539cec8f155ab6cd@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878769
+DTSTAMP:20261011T111611Z
 SUMMARY:Nottingham Forest vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261018T113000
 DTEND;TZID=America/New_York:20261018T133000
 LOCATION:The City Ground\, Nottingham\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -1005,133 +1034,147 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:0c27a69c8525
 END:VEVENT
 BEGIN:VEVENT
 UID:d112de0d480a33d210dd7f63@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882839
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Sevilla
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20261018T150000
 DTEND;TZID=America/New_York:20261018T170000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
  e - no recording needed. Replays typically stay up for about three to four
   weeks.\nESPN-listed carriers: ABC\, ESPN Deportes\, ESPN+\nSource: ESPN f
  ixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:2
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:3
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:56c1722d03fb
 END:VEVENT
 BEGIN:VEVENT
 UID:98ccfd14f0b23d6a9cf0d4be@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915397
+DTSTAMP:20261011T111611Z
 SUMMARY:Liverpool vs Villarreal
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261020T150000
 DTEND;TZID=America/New_York:20261020T170000
 LOCATION:Anfield\, Liverpool\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:206c41bbe906
 END:VEVENT
 BEGIN:VEVENT
 UID:5fb00af96fdb99a172ec9932@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915401
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs AEK Athens
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261020T150000
 DTEND;TZID=America/New_York:20261020T170000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:d20abeded164
 END:VEVENT
 BEGIN:VEVENT
 UID:b70d47a98f79caaf72ddf787@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915399
+DTSTAMP:20261011T111611Z
 SUMMARY:Paris Saint-Germain vs Barcelona
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261020T150000
 DTEND;TZID=America/New_York:20261020T170000
 LOCATION:Parc des Princes\, Paris\, France
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:a0a5711b9098
 END:VEVENT
 BEGIN:VEVENT
 UID:d28ef357940117771833e200@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915312
+DTSTAMP:20261011T111611Z
 SUMMARY:Bayern Munich vs Arsenal
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261021T150000
 DTEND;TZID=America/New_York:20261021T170000
 LOCATION:Allianz Arena\, München\, Germany
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:cb545f3c2b62
 END:VEVENT
 BEGIN:VEVENT
 UID:71ae9018dde72279f8d27dbc@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915313
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs RB Leipzig
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261021T150000
 DTEND;TZID=America/New_York:20261021T170000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:1fb98d6740ce
 END:VEVENT
 BEGIN:VEVENT
 UID:689a58d45e920d7e8cc02a42@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879256
+DTSTAMP:20261011T111611Z
 SUMMARY:Aston Villa vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261024T073000
 DTEND;TZID=America/New_York:20261024T093000
 LOCATION:Villa Park\, Birmingham\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -1141,19 +1184,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:d4b23c1e2065
 END:VEVENT
 BEGIN:VEVENT
 UID:441fbdf81f604f16d894c67b@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878768
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Everton
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261024T100000
 DTEND;TZID=America/New_York:20261024T120000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -1163,74 +1208,82 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:cfdd57438e3e
 END:VEVENT
 BEGIN:VEVENT
 UID:64fa0d07454f694c3bc4713d@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882832
+DTSTAMP:20261011T111611Z
 SUMMARY:Barcelona vs Real Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20261025T160000
 DTEND;TZID=America/New_York:20261025T180000
 LOCATION:Spotify Camp Nou\, Barcelona\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
  e - no recording needed. Replays typically stay up for about three to four
   weeks.\nESPN-listed carriers: ABC\, ESPN Deportes\, ESPN+\nSource: ESPN f
  ixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:2
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:3
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:5217779e2b8e
 END:VEVENT
 BEGIN:VEVENT
 UID:274552c2369aa5816eecce14@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401921835
+DTSTAMP:20261011T111611Z
 SUMMARY:Fleetwood Town vs Arsenal
 CATEGORIES:Carabao Cup
 DTSTART;TZID=America/New_York:20261027T160000
 DTEND;TZID=America/New_York:20261027T180000
 LOCATION:Highbury Stadium\, Fleetwood\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.league_cup
 DESCRIPTION:Competition: Carabao Cup\nU.S. streaming/broadcast: Carabao Cup
   (EFL Cup) matches stream in the U.S. on Paramount+.\nReplay: On demand on
   Paramount+ almost immediately after the final whistle\, on any plan - no 
  recording needed. Condensed replays are posted alongside it.\nSource: ESPN
   fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.league_cup
+X-SOCCERCAL-FP:0047e7b05e17
 END:VEVENT
 BEGIN:VEVENT
 UID:e8dfee63a441a81114b58958@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401921834
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Brighton & Hove Albion
 CATEGORIES:Carabao Cup
 DTSTART;TZID=America/New_York:20261028T153000
 DTEND;TZID=America/New_York:20261028T173000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.league_cup
 DESCRIPTION:Competition: Carabao Cup\nU.S. streaming/broadcast: Carabao Cup
   (EFL Cup) matches stream in the U.S. on Paramount+.\nReplay: On demand on
   Paramount+ almost immediately after the final whistle\, on any plan - no 
  recording needed. Condensed replays are posted alongside it.\nSource: ESPN
   fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.league_cup
+X-SOCCERCAL-FP:1787eacf6169
 END:VEVENT
 BEGIN:VEVENT
 UID:f80dedadda4ca74ea2919f90@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879245
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Brighton & Hove Albion
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261031T110000
 DTEND;TZID=America/New_York:20261031T130000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -1240,8 +1293,11 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:92a992378c22
 END:VEVENT
 BEGIN:VEVENT
 UID:274482b552d1038a73939a79@soccer-calendar.local
@@ -1262,33 +1318,34 @@ SEQUENCE:1
 END:VEVENT
 BEGIN:VEVENT
 UID:86065c0c707c00cb310c0ac6@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882819
+DTSTAMP:20261011T111611Z
 SUMMARY:Racing Santander vs Real Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20261101T101500
 DTEND;TZID=America/New_York:20261101T121500
 LOCATION:El Sardineros\, Santander\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
  e - no recording needed. Replays typically stay up for about three to four
   weeks.\nESPN-listed carriers: ESPN+\nSource: ESPN fixture feed\, refreshe
  d daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:2
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:3
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:fc3523cbd109
 END:VEVENT
 BEGIN:VEVENT
 UID:28ee4dc6b9943447802aa8cb@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879246
+DTSTAMP:20261011T111611Z
 SUMMARY:Liverpool vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261101T113000
 DTEND;TZID=America/New_York:20261101T133000
 LOCATION:Anfield\, Liverpool\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -1298,152 +1355,168 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:1205351a4c9c
 END:VEVENT
 BEGIN:VEVENT
 UID:e749f2b3bc2a845d05a143b9@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915386
+DTSTAMP:20261011T111611Z
 SUMMARY:Atlético Madrid vs Bayern Munich
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261103T150000
 DTEND;TZID=America/New_York:20261103T170000
 LOCATION:Riyadh Air Metropolitano\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:68cad065f46b
 END:VEVENT
 BEGIN:VEVENT
 UID:b3f519543545e84f5418ae6e@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915387
+DTSTAMP:20261011T111611Z
 SUMMARY:Barcelona vs Aston Villa
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261103T150000
 DTEND;TZID=America/New_York:20261103T170000
 LOCATION:Spotify Camp Nou\, Barcelona\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:4cca9e731a3f
 END:VEVENT
 BEGIN:VEVENT
 UID:52c56a561e8b25b74907160e@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915309
+DTSTAMP:20261011T111611Z
 SUMMARY:Villarreal vs Paris Saint-Germain
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261103T150000
 DTEND;TZID=America/New_York:20261103T170000
 LOCATION:Estadio de la Cerámica\, Villarreal\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:3877da8074a1
 END:VEVENT
 BEGIN:VEVENT
 UID:d9945494c3cc4e305e4920f1@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915383
+DTSTAMP:20261011T111611Z
 SUMMARY:AEK Athens vs Real Madrid
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261104T124500
 DTEND;TZID=America/New_York:20261104T144500
 LOCATION:OPAP Arena\, Athens\, Greece
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:7190cd001b1c
 END:VEVENT
 BEGIN:VEVENT
 UID:ef913c407ae87cc33c882fc1@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915382
+DTSTAMP:20261011T111611Z
 SUMMARY:Fenerbahce vs Liverpool
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261104T124500
 DTEND;TZID=America/New_York:20261104T144500
 LOCATION:Şükrü Saracoğlu Stadium\, Istanbul\, Türkiye
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:b9bc50abee98
 END:VEVENT
 BEGIN:VEVENT
 UID:91e6f1215e0e92020ecc5d49@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915306
+DTSTAMP:20261011T111611Z
 SUMMARY:RB Leipzig vs Manchester City
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261104T150000
 DTEND;TZID=America/New_York:20261104T170000
 LOCATION:Red Bull Arena\, Leipzig\, Germany
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:4e58405e8bf1
 END:VEVENT
 BEGIN:VEVENT
 UID:61208f2bf3e97f40a209313c@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915381
+DTSTAMP:20261011T111611Z
 SUMMARY:Slavia Prague vs Arsenal
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261104T150000
 DTEND;TZID=America/New_York:20261104T170000
 LOCATION:Fortuna Arena\, Prague\, Czechia
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:7693f15c4dd6
 END:VEVENT
 BEGIN:VEVENT
 UID:0f78249449e6a5942dfedaa4@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878760
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Hull City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261107T100000
 DTEND;TZID=America/New_York:20261107T120000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -1453,19 +1526,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:bb1ee7c9ef07
 END:VEVENT
 BEGIN:VEVENT
 UID:f16075aa21126e552dfbee14@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878757
+DTSTAMP:20261011T111611Z
 SUMMARY:Nottingham Forest vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261107T123000
 DTEND;TZID=America/New_York:20261107T143000
 LOCATION:The City Ground\, Nottingham\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -1475,19 +1550,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:2
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:3
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:62d8036eb172
 END:VEVENT
 BEGIN:VEVENT
 UID:ca60ccf4c174f8dd8663f9fe@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882808
+DTSTAMP:20261011T111611Z
 SUMMARY:Valencia vs Real Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20261108T150000
 DTEND;TZID=America/New_York:20261108T170000
 LOCATION:Mestalla Stadium\, Manises\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -1495,19 +1572,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:3b5e708a9fbd
 END:VEVENT
 BEGIN:VEVENT
 UID:55b3476ab93cb410aeef8469@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401861150
+DTSTAMP:20261011T111611Z
 SUMMARY:England vs Croatia
 CATEGORIES:UEFA Nations League
 DTSTART;TZID=America/New_York:20261112T144500
 DTEND;TZID=America/New_York:20261112T164500
 LOCATION:Wembley Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.nations
 DESCRIPTION:Competition: UEFA Nations League\nU.S. streaming/broadcast: Fox
   Sports holds the U.S. rights\; most midweek fixtures stream via Fox's sub
  -licensing partners\, with marquee matches on FS1/FS2. Spanish-language co
@@ -1515,19 +1594,21 @@ DESCRIPTION:Competition: UEFA Nations League\nU.S. streaming/broadcast: Fox
  overage on demand\; if this one lands only on FS1/FS2 through a pay-TV pac
  kage\, set a DVR recording (Hulu + Live TV or similar) to rewatch it.\nSou
  rce: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.nations
+X-SOCCERCAL-FP:0da4be986b9a
 END:VEVENT
 BEGIN:VEVENT
 UID:c6c695425893a67e0bc9da51@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401861178
+DTSTAMP:20261011T111611Z
 SUMMARY:Croatia vs Czechia
 CATEGORIES:UEFA Nations League
 DTSTART;TZID=America/New_York:20261115T144500
 DTEND;TZID=America/New_York:20261115T164500
 LOCATION:Opus Arena\, Osijek\, Croatia
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.nations
 DESCRIPTION:Competition: UEFA Nations League\nU.S. streaming/broadcast: Fox
   Sports holds the U.S. rights\; most midweek fixtures stream via Fox's sub
  -licensing partners\, with marquee matches on FS1/FS2. Spanish-language co
@@ -1535,19 +1616,21 @@ DESCRIPTION:Competition: UEFA Nations League\nU.S. streaming/broadcast: Fox
  overage on demand\; if this one lands only on FS1/FS2 through a pay-TV pac
  kage\, set a DVR recording (Hulu + Live TV or similar) to rewatch it.\nSou
  rce: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.nations
+X-SOCCERCAL-FP:76e435b80fd2
 END:VEVENT
 BEGIN:VEVENT
 UID:8983e1ff430de7df199fdb13@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401861175
+DTSTAMP:20261011T111611Z
 SUMMARY:Spain vs England
 CATEGORIES:UEFA Nations League
 DTSTART;TZID=America/New_York:20261115T144500
 DTEND;TZID=America/New_York:20261115T164500
 LOCATION:Riyadh Air Metropolitano\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.nations
 DESCRIPTION:Competition: UEFA Nations League\nU.S. streaming/broadcast: Fox
   Sports holds the U.S. rights\; most midweek fixtures stream via Fox's sub
  -licensing partners\, with marquee matches on FS1/FS2. Spanish-language co
@@ -1555,19 +1638,21 @@ DESCRIPTION:Competition: UEFA Nations League\nU.S. streaming/broadcast: Fox
  overage on demand\; if this one lands only on FS1/FS2 through a pay-TV pac
  kage\, set a DVR recording (Hulu + Live TV or similar) to rewatch it.\nSou
  rce: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.nations
+X-SOCCERCAL-FP:bb856cec41e4
 END:VEVENT
 BEGIN:VEVENT
 UID:82cffb0f38cc1beea12a22f2@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879233
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Fulham
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261121T073000
 DTEND;TZID=America/New_York:20261121T093000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -1577,19 +1662,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:2
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:3
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:97d14fca5df5
 END:VEVENT
 BEGIN:VEVENT
 UID:cf7c2133b6748463a06b1d34@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879232
+DTSTAMP:20261011T111611Z
 SUMMARY:Newcastle United vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261121T123000
 DTEND;TZID=America/New_York:20261121T143000
 LOCATION:St. James' Park\, Newcastle-upon-Tyne\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -1599,19 +1686,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:2
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:3
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:c9e8611c3862
 END:VEVENT
 BEGIN:VEVENT
 UID:babf6a38ee96b248d6edebab@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882798
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Celta Vigo
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20261122T150000
 DTEND;TZID=America/New_York:20261122T170000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -1619,152 +1708,168 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:88f2aec85cd0
 END:VEVENT
 BEGIN:VEVENT
 UID:a13e1146182ff3aff6fb1572@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915295
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Borussia Dortmund
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261124T150000
 DTEND;TZID=America/New_York:20261124T170000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:616a2044aeb9
 END:VEVENT
 BEGIN:VEVENT
 UID:3ab7ce66e30fe3105a50ff61@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915379
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Napoli
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261124T150000
 DTEND;TZID=America/New_York:20261124T170000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:73abcbdfaff4
 END:VEVENT
 BEGIN:VEVENT
 UID:d158f1185c52dc4f5c30f87f@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915298
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs PSV Eindhoven
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261124T150000
 DTEND;TZID=America/New_York:20261124T170000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:68468ecaa001
 END:VEVENT
 BEGIN:VEVENT
 UID:2d65a9857f8ea39a868780ba@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915378
+DTSTAMP:20261011T111611Z
 SUMMARY:Sabah FK vs Barcelona
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261125T124500
 DTEND;TZID=America/New_York:20261125T144500
 LOCATION:Baku Olympic Stadium\, Baku\, Azerbaijan
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:10ce89bf0160
 END:VEVENT
 BEGIN:VEVENT
 UID:d73f414f726272d15c535610@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915292
+DTSTAMP:20261011T111611Z
 SUMMARY:Club Brugge vs Liverpool
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261125T150000
 DTEND;TZID=America/New_York:20261125T170000
 LOCATION:Jan Breydel Stadium\, Brugge\, Belgium
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:9613c7a6387a
 END:VEVENT
 BEGIN:VEVENT
 UID:6149a76c7967a62c40289167@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915377
+DTSTAMP:20261011T111611Z
 SUMMARY:Lille vs Bayern Munich
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261125T150000
 DTEND;TZID=America/New_York:20261125T170000
 LOCATION:Decathlon Arena - Stade Pierre-Mauroy\, Lille\, France
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:cefdc9f4ab38
 END:VEVENT
 BEGIN:VEVENT
 UID:5a4e8f5796a0efef19525e8b@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915374
+DTSTAMP:20261011T111611Z
 SUMMARY:Paris Saint-Germain vs AS Roma
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261125T150000
 DTEND;TZID=America/New_York:20261125T170000
 LOCATION:Parc des Princes\, Paris\, France
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:6054de08a8df
 END:VEVENT
 BEGIN:VEVENT
 UID:8b97bf0f8ebfda888e299174@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878753
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261129T113000
 DTEND;TZID=America/New_York:20261129T133000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -1774,19 +1879,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:cbe44aef89f4
 END:VEVENT
 BEGIN:VEVENT
 UID:85b49d29d0f77b04b072c6a7@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882789
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Alavés
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20261129T150000
 DTEND;TZID=America/New_York:20261129T170000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -1794,19 +1901,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:3794edce16cb
 END:VEVENT
 BEGIN:VEVENT
 UID:adedf3a9f543d2ea6eaa7899@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878750
+DTSTAMP:20261011T111611Z
 SUMMARY:Brentford vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261202T150000
 DTEND;TZID=America/New_York:20261202T170000
 LOCATION:Gtech Community Stadium\, Brentford\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -1816,19 +1925,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:a1fb499d263a
 END:VEVENT
 BEGIN:VEVENT
 UID:a300781126d208163aeaf8a9@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879218
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Leeds United
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261202T150000
 DTEND;TZID=America/New_York:20261202T170000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -1838,19 +1949,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:897e35fb7e48
 END:VEVENT
 BEGIN:VEVENT
 UID:a06066abe2e051af9295c760@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879214
+DTSTAMP:20261011T111611Z
 SUMMARY:Brentford vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261205T100000
 DTEND;TZID=America/New_York:20261205T120000
 LOCATION:Gtech Community Stadium\, Brentford\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -1860,19 +1973,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:5d360c9cff9d
 END:VEVENT
 BEGIN:VEVENT
 UID:2bae26cd9230dff63f9b7b59@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879209
+DTSTAMP:20261011T111611Z
 SUMMARY:Tottenham Hotspur vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261205T100000
 DTEND;TZID=America/New_York:20261205T120000
 LOCATION:Tottenham Hotspur Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -1882,19 +1997,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:a9ddb11ccd12
 END:VEVENT
 BEGIN:VEVENT
 UID:0c0d5be3b5a4735b6368e032@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882785
+DTSTAMP:20261011T111611Z
 SUMMARY:Athletic Club vs Real Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20261206T150000
 DTEND;TZID=America/New_York:20261206T170000
 LOCATION:San Mamés\, Bilbao\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -1902,114 +2019,126 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:6c8434bf7aa4
 END:VEVENT
 BEGIN:VEVENT
 UID:04e1f7c49acb80e1f8f88851@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915286
+DTSTAMP:20261011T111611Z
 SUMMARY:Aston Villa vs Paris Saint-Germain
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261208T150000
 DTEND;TZID=America/New_York:20261208T170000
 LOCATION:Villa Park\, Birmingham\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:0d3687377499
 END:VEVENT
 BEGIN:VEVENT
 UID:d0c20972202a90b106548685@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915285
+DTSTAMP:20261011T111611Z
 SUMMARY:Barcelona vs Manchester City
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261208T150000
 DTEND;TZID=America/New_York:20261208T170000
 LOCATION:Spotify Camp Nou\, Barcelona\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:40e9ec524626
 END:VEVENT
 BEGIN:VEVENT
 UID:e4e8bb669c14036fb7c2e7f1@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915284
+DTSTAMP:20261011T111611Z
 SUMMARY:Bayern Munich vs Slavia Prague
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261208T150000
 DTEND;TZID=America/New_York:20261208T170000
 LOCATION:Allianz Arena\, München\, Germany
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:f5034fc6f3bb
 END:VEVENT
 BEGIN:VEVENT
 UID:3cfc1314038c7b2277cb8252@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915367
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Real Madrid
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261209T150000
 DTEND;TZID=America/New_York:20261209T170000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:990afebd58a3
 END:VEVENT
 BEGIN:VEVENT
 UID:eb68fe050293eab44dc80e63@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915369
+DTSTAMP:20261011T111611Z
 SUMMARY:Liverpool vs FC Porto
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261209T150000
 DTEND;TZID=America/New_York:20261209T170000
 LOCATION:Anfield\, Liverpool\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:e4bc114d05e4
 END:VEVENT
 BEGIN:VEVENT
 UID:681b747ae0a22ca30ada57c5@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878746
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs AFC Bournemouth
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261212T100000
 DTEND;TZID=America/New_York:20261212T120000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2019,19 +2148,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:15c06164a0e2
 END:VEVENT
 BEGIN:VEVENT
 UID:b827573825b1fd1ecaf3fcae@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878742
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Chelsea
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261212T100000
 DTEND;TZID=America/New_York:20261212T120000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2041,19 +2172,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:72b07ab842bb
 END:VEVENT
 BEGIN:VEVENT
 UID:f8efc51321407db965081549@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882769
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Osasuna
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20261213T150000
 DTEND;TZID=America/New_York:20261213T170000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -2061,19 +2194,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:0a15fc357cbe
 END:VEVENT
 BEGIN:VEVENT
 UID:8b5312822a5fa707fc873fd9@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879204
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Manchester United
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261219T100000
 DTEND;TZID=America/New_York:20261219T120000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2083,19 +2218,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:c0579073e1de
 END:VEVENT
 BEGIN:VEVENT
 UID:ebeb798c26304dbd2dcea006@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879199
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Hull City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261219T100000
 DTEND;TZID=America/New_York:20261219T120000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2105,19 +2242,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:585cfa13285c
 END:VEVENT
 BEGIN:VEVENT
 UID:93b01ed625f22e098510644c@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882763
+DTSTAMP:20261011T111611Z
 SUMMARY:Deportivo vs Real Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20261220T150000
 DTEND;TZID=America/New_York:20261220T170000
 LOCATION:Riazor\, La Coruña\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -2125,19 +2264,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:f14ca32f6f30
 END:VEVENT
 BEGIN:VEVENT
 UID:85e5e7d6350085bd180574e7@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878732
+DTSTAMP:20261011T111611Z
 SUMMARY:Newcastle United vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261226T150000
 DTEND;TZID=America/New_York:20261226T170000
 LOCATION:St. James' Park\, Newcastle-upon-Tyne\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2147,19 +2288,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:e5c2c268295f
 END:VEVENT
 BEGIN:VEVENT
 UID:1dda7eae378a3342274d5855@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878735
+DTSTAMP:20261011T111611Z
 SUMMARY:Crystal Palace vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261227T140000
 DTEND;TZID=America/New_York:20261227T160000
 LOCATION:Selhurst Park\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2169,19 +2312,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:19734d3283af
 END:VEVENT
 BEGIN:VEVENT
 UID:797b2b4dcb2e6d69cd096238@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879192
+DTSTAMP:20261011T111611Z
 SUMMARY:Everton vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261229T151500
 DTEND;TZID=America/New_York:20261229T171500
 LOCATION:Hill Dickinson Stadium\, Liverpool\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2191,19 +2336,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:7d5f287ceabd
 END:VEVENT
 BEGIN:VEVENT
 UID:835e113f95480d70b5fba1d7@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879191
+DTSTAMP:20261011T111611Z
 SUMMARY:Fulham vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261230T143000
 DTEND;TZID=America/New_York:20261230T163000
 LOCATION:Craven Cottage\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2213,19 +2360,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:969b1658e966
 END:VEVENT
 BEGIN:VEVENT
 UID:ae8751fc4d393b1bb54822fe@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879185
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Ipswich Town
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270102T100000
 DTEND;TZID=America/New_York:20270102T120000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2235,19 +2384,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:17e05f27bfb1
 END:VEVENT
 BEGIN:VEVENT
 UID:063f3188a8c05dce8a01a1bb@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879180
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Tottenham Hotspur
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270103T113000
 DTEND;TZID=America/New_York:20270103T133000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2257,19 +2408,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:377f22560b3f
 END:VEVENT
 BEGIN:VEVENT
 UID:2e9cc7e3656075f66514c1a0@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882749
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Getafe
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270103T150000
 DTEND;TZID=America/New_York:20270103T170000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -2277,19 +2430,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:bc848fbb6e9b
 END:VEVENT
 BEGIN:VEVENT
 UID:57e74b61d884c0da1d07192b@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879177
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Brentford
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270105T143000
 DTEND;TZID=America/New_York:20270105T163000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2299,19 +2454,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:6808138cf9e9
 END:VEVENT
 BEGIN:VEVENT
 UID:d8a0bbe5be4a02c111095e2f@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879171
+DTSTAMP:20261011T111611Z
 SUMMARY:Leeds United vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270106T151500
 DTEND;TZID=America/New_York:20270106T171500
 LOCATION:Elland Road\, Leeds\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2321,19 +2478,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:dca2aacd47ff
 END:VEVENT
 BEGIN:VEVENT
 UID:0c611aacb1e5a8718fc6f72e@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882739
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Levante
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270110T150000
 DTEND;TZID=America/New_York:20270110T170000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -2341,19 +2500,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:6663a11720dd
 END:VEVENT
 BEGIN:VEVENT
 UID:5079af13ba3d103d15585ba2@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878723
+DTSTAMP:20261011T111611Z
 SUMMARY:Hull City vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270116T100000
 DTEND;TZID=America/New_York:20270116T120000
 LOCATION:The MKM Stadium\, Hull\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2363,19 +2524,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:d7524a85a0b6
 END:VEVENT
 BEGIN:VEVENT
 UID:ef084092fbb93589c6fd167e@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878722
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Nottingham Forest
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270116T100000
 DTEND;TZID=America/New_York:20270116T120000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2385,19 +2548,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:4e591d3af39b
 END:VEVENT
 BEGIN:VEVENT
 UID:c25dc9f22404fb22e6047589@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882730
+DTSTAMP:20261011T111611Z
 SUMMARY:Málaga vs Real Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270117T150000
 DTEND;TZID=America/New_York:20270117T170000
 LOCATION:La Rosaleda\, Malaga\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -2405,152 +2570,168 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:41dd591096b5
 END:VEVENT
 BEGIN:VEVENT
 UID:ad78e253787318581e3966cb@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915360
+DTSTAMP:20261011T111611Z
 SUMMARY:Internazionale vs Liverpool
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20270119T150000
 DTEND;TZID=America/New_York:20270119T170000
 LOCATION:San Siro\, Milano\, Italy
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:0abf155788a2
 END:VEVENT
 BEGIN:VEVENT
 UID:fcd156e77efccd5eaf39f500@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915280
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs LASK Linz
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20270119T150000
 DTEND;TZID=America/New_York:20270119T170000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:c90f161bea8c
 END:VEVENT
 BEGIN:VEVENT
 UID:07eb88429ac5d5815652e2d0@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915273
+DTSTAMP:20261011T111611Z
 SUMMARY:Como vs Paris Saint-Germain
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20270120T150000
 DTEND;TZID=America/New_York:20270120T170000
 LOCATION:Giuseppe Sinigaglia\, Como\, Italy
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:354466b2c790
 END:VEVENT
 BEGIN:VEVENT
 UID:c30908f0eea573e1b8dfaf8f@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915274
+DTSTAMP:20261011T111611Z
 SUMMARY:Lens vs Manchester City
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20270120T150000
 DTEND;TZID=America/New_York:20270120T170000
 LOCATION:Stade Bollaert-Delelis\, Lens\, France
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:b0a4db0dbe31
 END:VEVENT
 BEGIN:VEVENT
 UID:741ba55660d1855f3f757775@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915357
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester United vs Bayern Munich
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20270120T150000
 DTEND;TZID=America/New_York:20270120T170000
 LOCATION:Old Trafford\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:68c84892a09d
 END:VEVENT
 BEGIN:VEVENT
 UID:bddee317db5058a96b9f956a@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915275
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Betis vs Arsenal
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20270120T150000
 DTEND;TZID=America/New_York:20270120T170000
 LOCATION:Estadio La Cartuja\, Sevilla\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:030ac70cf87b
 END:VEVENT
 BEGIN:VEVENT
 UID:100c98da7729aaf148df951a@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915356
+DTSTAMP:20261011T111611Z
 SUMMARY:Sporting CP vs Barcelona
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20270120T150000
 DTEND;TZID=America/New_York:20270120T170000
 LOCATION:Estádio José Alvalade\, Lisbon\, Portugal
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:69819c44bc8f
 END:VEVENT
 BEGIN:VEVENT
 UID:f386445f1e45aca3a2639f18@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878720
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Newcastle United
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270123T100000
 DTEND;TZID=America/New_York:20270123T120000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2560,19 +2741,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:cce60d00877b
 END:VEVENT
 BEGIN:VEVENT
 UID:cdebc24d5591ae82bfe541f9@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879164
+DTSTAMP:20261011T111611Z
 SUMMARY:Brighton & Hove Albion vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270123T100000
 DTEND;TZID=America/New_York:20270123T120000
 LOCATION:American Express Stadium\, Falmer\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2582,19 +2765,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:fe69394d8c34
 END:VEVENT
 BEGIN:VEVENT
 UID:6ffa93837da6ac386324ae01@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882719
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Real Betis
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270124T150000
 DTEND;TZID=America/New_York:20270124T170000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -2602,152 +2787,168 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:d9565e798600
 END:VEVENT
 BEGIN:VEVENT
 UID:110bc78022fe8a33df4b0b97@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915346
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Sabah FK
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20270127T150000
 DTEND;TZID=America/New_York:20270127T170000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:b86820a9ba43
 END:VEVENT
 BEGIN:VEVENT
 UID:a14b747a0edd36de6e9ade52@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915264
+DTSTAMP:20261011T111611Z
 SUMMARY:Barcelona vs Como
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20270127T150000
 DTEND;TZID=America/New_York:20270127T170000
 LOCATION:Spotify Camp Nou\, Barcelona\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:368eaf7632ee
 END:VEVENT
 BEGIN:VEVENT
 UID:54207066c9a5bd1559e2edf1@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915348
+DTSTAMP:20261011T111611Z
 SUMMARY:Bayern Munich vs Real Betis
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20270127T150000
 DTEND;TZID=America/New_York:20270127T170000
 LOCATION:Allianz Arena\, München\, Germany
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:d7a1819f8732
 END:VEVENT
 BEGIN:VEVENT
 UID:65b87eb66c9ba0e8c62c87cb@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915353
+DTSTAMP:20261011T111611Z
 SUMMARY:Liverpool vs Lens
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20270127T150000
 DTEND;TZID=America/New_York:20270127T170000
 LOCATION:Anfield\, Liverpool\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:7241f53aeba8
 END:VEVENT
 BEGIN:VEVENT
 UID:48e172efd1cf8ababdcc5b67@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915352
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Sporting CP
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20270127T150000
 DTEND;TZID=America/New_York:20270127T170000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:66c9a8a34abc
 END:VEVENT
 BEGIN:VEVENT
 UID:5d93a3bc41a8d257769a41a0@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915267
+DTSTAMP:20261011T111611Z
 SUMMARY:Paris Saint-Germain vs Galatasaray
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20270127T150000
 DTEND;TZID=America/New_York:20270127T170000
 LOCATION:Parc des Princes\, Paris\, France
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:d496b92ac7b3
 END:VEVENT
 BEGIN:VEVENT
 UID:42de82f910676f6b0512bad6@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401915270
+DTSTAMP:20261011T111611Z
 SUMMARY:Shakhtar Donetsk vs Real Madrid
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20270127T150000
 DTEND;TZID=America/New_York:20270127T170000
 LOCATION:Stamford Bridge\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:uefa.champions
 DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  aramount+ is the U.S. English-language home of UEFA club competitions\; Sp
  anish-language coverage on TUDN/ViX.\nReplay: On demand on Paramount+ almo
  st immediately after the final whistle\, on any plan - no recording needed
  . Condensed replays are posted alongside it.\nESPN-listed carriers: Paramo
  unt+\nSource: ESPN fixture feed\, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:uefa.champions
+X-SOCCERCAL-FP:13d7c7ce8a76
 END:VEVENT
 BEGIN:VEVENT
 UID:985642e1011cc02c4f43edd6@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879154
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270130T100000
 DTEND;TZID=America/New_York:20270130T120000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2757,19 +2958,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:f8add48032ff
 END:VEVENT
 BEGIN:VEVENT
 UID:788b555c9f45a6b8b718d064@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882709
+DTSTAMP:20261011T111611Z
 SUMMARY:Rayo Vallecano vs Real Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270131T150000
 DTEND;TZID=America/New_York:20270131T170000
 LOCATION:Estadio de Vallecas\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -2777,8 +2980,11 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:45e397a3f4d2
 END:VEVENT
 BEGIN:VEVENT
 UID:6a2d719f15ac033b8218b190@soccer-calendar.local
@@ -2820,14 +3026,13 @@ SEQUENCE:2
 END:VEVENT
 BEGIN:VEVENT
 UID:42ddcccc03b7d293296f19d4@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878712
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Liverpool
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270206T100000
 DTEND;TZID=America/New_York:20270206T120000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2837,19 +3042,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:592545fd678c
 END:VEVENT
 BEGIN:VEVENT
 UID:dab907d4072ce858eee45bbf@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879150
+DTSTAMP:20261011T111611Z
 SUMMARY:Fulham vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270206T100000
 DTEND;TZID=America/New_York:20270206T120000
 LOCATION:Craven Cottage\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2859,19 +3066,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:514535803bbe
 END:VEVENT
 BEGIN:VEVENT
 UID:4b654b705975f556c781eb87@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882698
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Sociedad vs Real Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270207T150000
 DTEND;TZID=America/New_York:20270207T170000
 LOCATION:Reale Arena\, San Sebastian\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -2879,19 +3088,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:5e81d1425e15
 END:VEVENT
 BEGIN:VEVENT
 UID:920fefcb7fecdef68558a970@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878706
+DTSTAMP:20261011T111611Z
 SUMMARY:Ipswich Town vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270210T150000
 DTEND;TZID=America/New_York:20270210T170000
 LOCATION:Portman Road\, Ipswich\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2901,19 +3112,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:995353dbe969
 END:VEVENT
 BEGIN:VEVENT
 UID:8d4f869a7f6f7b3d8319a9ee@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879140
+DTSTAMP:20261011T111611Z
 SUMMARY:Tottenham Hotspur vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270210T150000
 DTEND;TZID=America/New_York:20270210T170000
 LOCATION:Tottenham Hotspur Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2923,19 +3136,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:a567ff06ed76
 END:VEVENT
 BEGIN:VEVENT
 UID:68fa8d9e02615eba832a253b@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882691
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Athletic Club
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270214T150000
 DTEND;TZID=America/New_York:20270214T170000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -2943,19 +3158,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:0159b6f736ae
 END:VEVENT
 BEGIN:VEVENT
 UID:d9bd78570a3516582a292751@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878705
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Fulham
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270220T100000
 DTEND;TZID=America/New_York:20270220T120000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2965,19 +3182,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:02d80be885d0
 END:VEVENT
 BEGIN:VEVENT
 UID:6fd34008e70969182701a110@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879135
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Newcastle United
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270220T100000
 DTEND;TZID=America/New_York:20270220T120000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -2987,19 +3206,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:0fd7992686f6
 END:VEVENT
 BEGIN:VEVENT
 UID:d5f408eacfc44b0ff8a17e90@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882678
+DTSTAMP:20261011T111611Z
 SUMMARY:Sevilla vs Real Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270221T150000
 DTEND;TZID=America/New_York:20270221T170000
 LOCATION:Ramón Sánchez Pizjuán Stadium\, Sevilla\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -3007,19 +3228,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:cbdcb59a2c90
 END:VEVENT
 BEGIN:VEVENT
 UID:7da5412e9a6acc8eaf1dd704@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878698
+DTSTAMP:20261011T111611Z
 SUMMARY:Hull City vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270227T100000
 DTEND;TZID=America/New_York:20270227T120000
 LOCATION:The MKM Stadium\, Hull\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3029,19 +3252,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:2e94e10b77c7
 END:VEVENT
 BEGIN:VEVENT
 UID:6ff09a1fa60063148d660884@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878697
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester United vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270227T100000
 DTEND;TZID=America/New_York:20270227T120000
 LOCATION:Old Trafford\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3051,19 +3276,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:42c08cd0a917
 END:VEVENT
 BEGIN:VEVENT
 UID:7ef08626c1636e62af19c72a@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882668
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Valencia
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270228T150000
 DTEND;TZID=America/New_York:20270228T170000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -3071,19 +3298,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:525a42cdcf67
 END:VEVENT
 BEGIN:VEVENT
 UID:4dcacdd3c13fe1b24fb6bbfb@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878696
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Crystal Palace
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270303T150000
 DTEND;TZID=America/New_York:20270303T170000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3093,19 +3322,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:9abb3feeceff
 END:VEVENT
 BEGIN:VEVENT
 UID:e9ee7b2598aea8f90997a15f@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879124
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Everton
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270303T150000
 DTEND;TZID=America/New_York:20270303T170000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3115,19 +3346,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:a61643c0061c
 END:VEVENT
 BEGIN:VEVENT
 UID:885ef65077bb2dad60f9de41@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882657
+DTSTAMP:20261011T111611Z
 SUMMARY:Villarreal vs Real Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270307T150000
 DTEND;TZID=America/New_York:20270307T170000
 LOCATION:Estadio de la Cerámica\, Villarreal\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -3135,19 +3368,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:4670f3376c83
 END:VEVENT
 BEGIN:VEVENT
 UID:d05b98c7be31b762008af2bb@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878693
+DTSTAMP:20261011T111611Z
 SUMMARY:Chelsea vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270313T100000
 DTEND;TZID=America/New_York:20270313T120000
 LOCATION:Stamford Bridge\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3157,19 +3392,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:9a36be36f5af
 END:VEVENT
 BEGIN:VEVENT
 UID:73f6ee0ac444b03f5d0776d6@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878692
+DTSTAMP:20261011T111611Z
 SUMMARY:Coventry City vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270313T100000
 DTEND;TZID=America/New_York:20270313T120000
 LOCATION:Coventry Building Society Arena\, Coventry\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3179,19 +3416,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:b4113dbcc985
 END:VEVENT
 BEGIN:VEVENT
 UID:f528c9ebe1035df56b4820ac@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882647
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Espanyol
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270314T140000
 DTEND;TZID=America/New_York:20270314T160000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -3199,19 +3438,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:afc3dad9a071
 END:VEVENT
 BEGIN:VEVENT
 UID:f9dc0ae09228e77ea1600b41@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879115
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Sunderland
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270320T110000
 DTEND;TZID=America/New_York:20270320T130000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3221,19 +3462,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:ceac6089ca6e
 END:VEVENT
 BEGIN:VEVENT
 UID:0c84cd58f08641edab201ae7@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879108
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Manchester United
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270320T110000
 DTEND;TZID=America/New_York:20270320T130000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3243,19 +3486,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:56e65cfa9f77
 END:VEVENT
 BEGIN:VEVENT
 UID:0c795c35317eb4c69bb946e5@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882645
+DTSTAMP:20261011T111611Z
 SUMMARY:Celta Vigo vs Real Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270321T140000
 DTEND;TZID=America/New_York:20270321T160000
 LOCATION:Balaidos\, Vigo\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -3263,19 +3508,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:fc72463192c9
 END:VEVENT
 BEGIN:VEVENT
 UID:745ce7f5239329620c31e9ae@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882628
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Atlético Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270404T140000
 DTEND;TZID=America/New_York:20270404T160000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -3283,19 +3530,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:a5b4bbdfa875
 END:VEVENT
 BEGIN:VEVENT
 UID:5beb1e856b509f7babc32281@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879106
+DTSTAMP:20261011T111611Z
 SUMMARY:AFC Bournemouth vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270410T100000
 DTEND;TZID=America/New_York:20270410T120000
 LOCATION:Vitality Stadium\, Bournemouth\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3305,19 +3554,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:a3d0010e2573
 END:VEVENT
 BEGIN:VEVENT
 UID:55334601467830897c267f93@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879103
+DTSTAMP:20261011T111611Z
 SUMMARY:Coventry City vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270410T100000
 DTEND;TZID=America/New_York:20270410T120000
 LOCATION:Coventry Building Society Arena\, Coventry\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3327,19 +3578,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:53dd1c10ad6e
 END:VEVENT
 BEGIN:VEVENT
 UID:68f46cdc921a52d68193b831@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882622
+DTSTAMP:20261011T111611Z
 SUMMARY:Osasuna vs Real Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270411T140000
 DTEND;TZID=America/New_York:20270411T160000
 LOCATION:El Sadar\, Pamplona\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -3347,19 +3600,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:f4eee24dee68
 END:VEVENT
 BEGIN:VEVENT
 UID:103b2c7a92d3169624e5e15e@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878686
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Aston Villa
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270417T100000
 DTEND;TZID=America/New_York:20270417T120000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3369,19 +3624,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:3bc7e1f1ca11
 END:VEVENT
 BEGIN:VEVENT
 UID:ed3dff157a4c4a87e7bd8644@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879095
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Crystal Palace
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270417T100000
 DTEND;TZID=America/New_York:20270417T120000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3391,19 +3648,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:1a1bb0e5a7dd
 END:VEVENT
 BEGIN:VEVENT
 UID:0ab3d62abcf41da26b4833b1@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882610
+DTSTAMP:20261011T111611Z
 SUMMARY:Getafe vs Real Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270418T140000
 DTEND;TZID=America/New_York:20270418T160000
 LOCATION:Estadio Coliseum\, Getafe\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -3411,19 +3670,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:fa558be9da48
 END:VEVENT
 BEGIN:VEVENT
 UID:bc83e5b29185ad405f6dbbb6@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882600
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Elche
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270421T140000
 DTEND;TZID=America/New_York:20270421T160000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -3431,19 +3692,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:32dc579b3c98
 END:VEVENT
 BEGIN:VEVENT
 UID:7a07a1f0ae086a3eb062edab@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878680
+DTSTAMP:20261011T111611Z
 SUMMARY:AFC Bournemouth vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270424T100000
 DTEND;TZID=America/New_York:20270424T120000
 LOCATION:Vitality Stadium\, Bournemouth\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3453,19 +3716,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:5009add72cd8
 END:VEVENT
 BEGIN:VEVENT
 UID:2d0ecb1887f2decc65d57a74@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879094
+DTSTAMP:20261011T111611Z
 SUMMARY:Chelsea vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270424T100000
 DTEND;TZID=America/New_York:20270424T120000
 LOCATION:Stamford Bridge\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3475,19 +3740,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:0d70c5158ef9
 END:VEVENT
 BEGIN:VEVENT
 UID:433a42bdfbb0e72c75864839@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878676
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Tottenham Hotspur
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270501T100000
 DTEND;TZID=America/New_York:20270501T120000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3497,19 +3764,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:452d6390c673
 END:VEVENT
 BEGIN:VEVENT
 UID:c12817caf76b6da41a7ff4e3@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879083
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Brentford
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270501T100000
 DTEND;TZID=America/New_York:20270501T120000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3519,19 +3788,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:62a596572453
 END:VEVENT
 BEGIN:VEVENT
 UID:45434f27daa156f9cc9ce3aa@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882590
+DTSTAMP:20261011T111611Z
 SUMMARY:Levante vs Real Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270502T140000
 DTEND;TZID=America/New_York:20270502T160000
 LOCATION:Estadi Ciutat de València\, Manises\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -3539,19 +3810,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:27b505efd994
 END:VEVENT
 BEGIN:VEVENT
 UID:2b8e09bda6af07a99bc83866@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879081
+DTSTAMP:20261011T111611Z
 SUMMARY:Leeds United vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270508T100000
 DTEND;TZID=America/New_York:20270508T120000
 LOCATION:Elland Road\, Leeds\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3561,19 +3834,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:5f5fcaa08e9f
 END:VEVENT
 BEGIN:VEVENT
 UID:2158dce1428f3cd8ad442328@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878668
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Liverpool
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270508T100000
 DTEND;TZID=America/New_York:20270508T120000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3583,19 +3858,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:f9a0b80d0bbb
 END:VEVENT
 BEGIN:VEVENT
 UID:fdc70141e5a6678da2af716a@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882579
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Barcelona
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270509T140000
 DTEND;TZID=America/New_York:20270509T160000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -3603,19 +3880,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:35f990c88a1e
 END:VEVENT
 BEGIN:VEVENT
 UID:8228eb2b38f9c17068a7ce1a@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879079
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Nottingham Forest
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270515T100000
 DTEND;TZID=America/New_York:20270515T120000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3625,19 +3904,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:a0ab2aa00a85
 END:VEVENT
 BEGIN:VEVENT
 UID:f0670cb42957d798070e96d2@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879075
+DTSTAMP:20261011T111611Z
 SUMMARY:Ipswich Town vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270515T100000
 DTEND;TZID=America/New_York:20270515T120000
 LOCATION:Portman Road\, Ipswich\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3647,19 +3928,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:44c6131840c6
 END:VEVENT
 BEGIN:VEVENT
 UID:26eb97e19c547aa1abf64cfd@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882569
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Racing Santander
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270516T140000
 DTEND;TZID=America/New_York:20270516T160000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -3667,19 +3950,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:532813c57e75
 END:VEVENT
 BEGIN:VEVENT
 UID:b5c6b0d5388f7e665200e6d1@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879070
+DTSTAMP:20261011T111611Z
 SUMMARY:Everton vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270523T100000
 DTEND;TZID=America/New_York:20270523T120000
 LOCATION:Hill Dickinson Stadium\, Liverpool\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3689,19 +3974,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:1b91b75789e7
 END:VEVENT
 BEGIN:VEVENT
 UID:929805a84d187e2308ff5805@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401879067
+DTSTAMP:20261011T111611Z
 SUMMARY:Manchester City vs Aston Villa
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270523T100000
 DTEND;TZID=America/New_York:20270523T120000
 LOCATION:Etihad Stadium\, Manchester\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3711,19 +3998,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:4b0cd839bf6d
 END:VEVENT
 BEGIN:VEVENT
 UID:353f1bda605a8afb6be0d2b5@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882566
+DTSTAMP:20261011T111611Z
 SUMMARY:Alavés vs Real Madrid
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270523T140000
 DTEND;TZID=America/New_York:20270523T160000
 LOCATION:Mendizorrotza\, Vitoria-Gasteiz\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -3731,19 +4020,21 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:ba76a8898d55
 END:VEVENT
 BEGIN:VEVENT
 UID:d768ec5437841acc52a8162d@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878660
+DTSTAMP:20261011T111611Z
 SUMMARY:Arsenal vs Brighton & Hove Albion
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270530T110000
 DTEND;TZID=America/New_York:20270530T130000
 LOCATION:Emirates Stadium\, London\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3753,19 +4044,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:ca905cbd8caf
 END:VEVENT
 BEGIN:VEVENT
 UID:c2227398d1a38ec418084390@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401878658
+DTSTAMP:20261011T111611Z
 SUMMARY:Sunderland vs Manchester City
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20270530T110000
 DTEND;TZID=America/New_York:20270530T130000
 LOCATION:Stadium of Light\, Sunderland\, England
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:eng.1
 DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  Telemundo: availability varies by match\; USA/NBC linear matches can also 
  be watched through Hulu + Live TV. Exact U.S. assignment announced closer 
@@ -3775,19 +4068,21 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
  \, refreshed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:eng.1
+X-SOCCERCAL-FP:2275c0d17489
 END:VEVENT
 BEGIN:VEVENT
 UID:0c2293ca2fd3c81079e9b448@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401882548
+DTSTAMP:20261011T111611Z
 SUMMARY:Real Madrid vs Deportivo
 CATEGORIES:LaLiga
 DTSTART;TZID=America/New_York:20270530T140000
 DTEND;TZID=America/New_York:20270530T160000
 LOCATION:Santiago Bernabéu\, Madrid\, Spain
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-SOCCERCAL-COMP:esp.1
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
@@ -3795,7 +4090,10 @@ DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
   weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
  confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
  hed daily.
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-SOCCERCAL-COMP:esp.1
+X-SOCCERCAL-FP:b81c5c749fcb
 END:VEVENT
 END:VCALENDAR

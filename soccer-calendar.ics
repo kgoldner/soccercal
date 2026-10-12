@@ -1559,24 +1559,23 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ca60ccf4c174f8dd8663f9fe@soccer-calendar.local
 X-SOCCERCAL-ESPN-ID:401882808
-DTSTAMP:20261011T111611Z
+DTSTAMP:20261012T111504Z
 SUMMARY:Valencia vs Real Madrid
 CATEGORIES:LaLiga
-DTSTART;TZID=America/New_York:20261108T150000
-DTEND;TZID=America/New_York:20261108T170000
+DTSTART;TZID=America/New_York:20261107T150000
+DTEND;TZID=America/New_York:20261107T170000
 LOCATION:Mestalla Stadium\, Manises\, Spain
 DESCRIPTION:Competition: LaLiga\nU.S. streaming/broadcast: ESPN Unlimited (
  ESPN+/ESPN Select) is the U.S. home of LaLiga\; select matches simulcast o
  n ESPN Deportes.\nReplay: On demand in the ESPN app after the final whistl
  e - no recording needed. Replays typically stay up for about three to four
-  weeks.\nESPN-listed carriers: ESPN+\nSchedule note: kickoff time not yet 
- confirmed\; verify closer to the date.\nSource: ESPN fixture feed\, refres
- hed daily.
+  weeks.\nESPN-listed carriers: ESPN+\nSource: ESPN fixture feed\, refreshe
+ d daily.
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-SEQUENCE:2
+SEQUENCE:3
 X-SOCCERCAL-COMP:esp.1
-X-SOCCERCAL-FP:3b5e708a9fbd
+X-SOCCERCAL-FP:acc15681ad7e
 END:VEVENT
 BEGIN:VEVENT
 UID:55b3476ab93cb410aeef8469@soccer-calendar.local

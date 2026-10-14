@@ -1019,7 +1019,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:86c1baad539cec8f155ab6cd@soccer-calendar.local
 X-SOCCERCAL-ESPN-ID:401878769
-DTSTAMP:20261011T111611Z
+DTSTAMP:20261014T113223Z
 SUMMARY:Nottingham Forest vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261018T113000
@@ -1032,13 +1032,13 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
  s or that air on NBC\, usually shortly after full time. Matches carried on
   USA Network\, CNBC or Syfy are currently absent from Peacock's replay lib
  rary after the Versant spin-off - for those\, record the linear broadcast 
- (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
- \, refreshed daily.
+ (DVR via Hulu + Live TV or similar) to rewatch.\nESPN-listed carriers: Pea
+ cock\nSource: ESPN fixture feed\, refreshed daily.
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-SEQUENCE:2
+SEQUENCE:3
 X-SOCCERCAL-COMP:eng.1
-X-SOCCERCAL-FP:0c27a69c8525
+X-SOCCERCAL-FP:fe8d15828e2a
 END:VEVENT
 BEGIN:VEVENT
 UID:d112de0d480a33d210dd7f63@soccer-calendar.local

@@ -870,8 +870,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:d47ce669770d63a804ecf2d4@soccer-calendar.local
 X-SOCCERCAL-ESPN-ID:401915411
-DTSTAMP:20261011T111611Z
-SUMMARY:Viking FK vs Bayern Munich
+DTSTAMP:20261015T111825Z
+SUMMARY:VIKING FK vs Bayern Munich
 CATEGORIES:UEFA Champions League
 DTSTART;TZID=America/New_York:20261013T150000
 DTEND;TZID=America/New_York:20261013T170000
@@ -884,9 +884,9 @@ DESCRIPTION:Competition: UEFA Champions League\nU.S. streaming/broadcast: P
  unt+\nSource: ESPN fixture feed\, refreshed daily.
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-SEQUENCE:2
+SEQUENCE:3
 X-SOCCERCAL-COMP:uefa.champions
-X-SOCCERCAL-FP:779f4d587c7d
+X-SOCCERCAL-FP:f4ccee7023c1
 END:VEVENT
 BEGIN:VEVENT
 UID:405b77ac79f6999c61c128ec@soccer-calendar.local
@@ -2001,6 +2001,27 @@ TRANSP:TRANSPARENT
 SEQUENCE:2
 X-SOCCERCAL-COMP:eng.1
 X-SOCCERCAL-FP:a9ddb11ccd12
+END:VEVENT
+BEGIN:VEVENT
+UID:0b0d19f76c571de9e898d698@soccer-calendar.local
+X-SOCCERCAL-ESPN-ID:401930339
+DTSTAMP:20261015T111825Z
+SUMMARY:England vs Ukraine
+CATEGORIES:International Friendly
+DTSTART;TZID=America/New_York:20261205T123000
+DTEND;TZID=America/New_York:20261205T143000
+LOCATION:Wembley Stadium\, London\, England
+DESCRIPTION:Competition: International Friendly\nU.S. streaming/broadcast: 
+ Friendly broadcast rights are sold per match by the host federation\; chec
+ k beIN Connect\, ESPN Unlimited\, HBO Max\, and Paramount+ listings in the
+  week of the match.\nReplay: Depends on which carrier picks the match up. 
+ If it lands on a streaming service you subscribe to\, expect an on-demand 
+ replay\; if it airs only on a linear channel\, record it to rewatch.\nSour
+ ce: ESPN fixture feed\, refreshed daily.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+X-SOCCERCAL-COMP:fifa.friendly
+X-SOCCERCAL-FP:867c8a6e67e0
 END:VEVENT
 BEGIN:VEVENT
 UID:0c0d5be3b5a4735b6368e032@soccer-calendar.local

@@ -1000,23 +1000,6 @@ X-SOCCERCAL-COMP:eng.1
 X-SOCCERCAL-FP:d49a8dccc5b9
 END:VEVENT
 BEGIN:VEVENT
-UID:8093ccc1e16f0a4b45d692cb@soccer-calendar.local
-SUMMARY:Nottingham Forest vs Arsenal
-CATEGORIES:Premier League
-DTSTART;TZID=America/New_York:20261017T100000
-DTEND;TZID=America/New_York:20261017T120000
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
- Telemundo: availability varies by match\; USA/NBC linear matches can also 
- be watched through Hulu + Live TV. Exact U.S. assignment not yet announced
- .\nSchedule note: Kickoff time is provisional and may move for UK televisi
- on/competition scheduling.\nSource: https://www.premierleague.com/en/news/
- 4675097/all-380-fixtures-for-202627-premier-league-season
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
-END:VEVENT
-BEGIN:VEVENT
 UID:86c1baad539cec8f155ab6cd@soccer-calendar.local
 X-SOCCERCAL-ESPN-ID:401878769
 DTSTAMP:20261014T113223Z

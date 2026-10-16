@@ -800,6 +800,43 @@ class MergeStats:
     notes: list = field(default_factory=list)
 
 
+def legacy_reschedule_matches(fx: Fixture, fixtures: list, existing: dict) -> list:
+    """Migrate only unambiguous provisional PL placeholders without IDs.
+
+    Exact competition and ordered team names distinguish women's fixtures and
+    reverse legs. Limit migration to three days and require a single fixture
+    and placeholder; ambiguous matches stay untouched for manual review.
+    """
+    if fx.comp_key != "eng.1" or not fx.espn_id:
+        return []
+    matches = []
+    for ev in existing.values():
+        desc = _prop(ev.lines, "DESCRIPTION")
+        safe_properties = {"UID", "DTSTAMP", "SUMMARY", "CATEGORIES", "DTSTART",
+                           "DTEND", "STATUS", "TRANSP", "DESCRIPTION", "SEQUENCE",
+                           "LOCATION", "URL", "CREATED", "LAST-MODIFIED",
+                           "X-APPLE-TRAVEL-ADVISORY-BEHAVIOR"}
+        properties = {line.split(":", 1)[0].split(";", 1)[0] for line in ev.lines}
+        if (not ev.start or ev.comp_key
+                or not properties.issubset(safe_properties)
+                or _prop(ev.lines, "X-SOCCERCAL-ESPN-ID")
+                or normalize(ev.categories) != normalize(fx.comp_name)
+                or normalize(ev.summary) != normalize(fx.summary())
+                or (_prop(ev.lines, "LOCATION")
+                    and normalize(_prop(ev.lines, "LOCATION")) != normalize(fx.venue))
+                or abs(ev.start - fx.start_utc) > timedelta(days=3)
+                or "Schedule note: Kickoff time is provisional" not in desc
+                or "https://www.premierleague.com/en/news/" not in desc):
+            continue
+        possible = [other for other in fixtures
+                    if other.comp_key == fx.comp_key
+                    and normalize(other.summary()) == normalize(fx.summary())
+                    and abs(ev.start - other.start_utc) <= timedelta(days=3)]
+        if len(possible) == 1:
+            matches.append(ev)
+    return matches if len(matches) == 1 else []
+
+
 def merge(cfg: dict, fixtures: list, existing: dict, fetched_ok: set,
           tz: ZoneInfo, now: datetime, prune: bool) -> tuple:
     cutoff = now - timedelta(hours=float(cfg.get("backfill_window_hours", 3)))
@@ -860,6 +897,15 @@ def merge(cfg: dict, fixtures: list, existing: dict, fetched_ok: set,
         if prior is None and alias_matches:
             prior = alias_matches[0]
         duplicate_notes = []
+        legacy_matches = legacy_reschedule_matches(fx, fixtures, existing)
+        if prior is None and legacy_matches:
+            prior = legacy_matches[0]
+        for legacy in legacy_matches:
+            if legacy.uid != getattr(prior, "uid", None):
+                consumed.add(legacy.uid)
+                duplicate_notes.extend(_prop(legacy.lines, "DESCRIPTION").split("\\n"))
+                if _prop(legacy.lines, "URL"):
+                    duplicate_notes.append("Preserved event URL: " + _prop(legacy.lines, "URL"))
         for alias in alias_matches:
             if (alias.uid != getattr(prior, "uid", None)
                     and alias.uid not in new_by_uid
@@ -877,7 +923,7 @@ def merge(cfg: dict, fixtures: list, existing: dict, fetched_ok: set,
         lines = event_lines(fx, cfg, tz, stamp, 0)
         new_fp = _prop(lines, "X-SOCCERCAL-FP")
 
-        if prior is not None and prior.fingerprint == new_fp:
+        if prior is not None and prior.fingerprint == new_fp and not duplicate_notes:
             lines = event_lines(fx, cfg, tz, prior.dtstamp or stamp, prior.sequence)
             stats.unchanged += 1
         elif prior is not None:

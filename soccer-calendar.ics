@@ -1283,23 +1283,6 @@ X-SOCCERCAL-COMP:eng.1
 X-SOCCERCAL-FP:92a992378c22
 END:VEVENT
 BEGIN:VEVENT
-UID:274482b552d1038a73939a79@soccer-calendar.local
-SUMMARY:Liverpool vs Arsenal
-CATEGORIES:Premier League
-DTSTART;TZID=America/New_York:20261031T110000
-DTEND;TZID=America/New_York:20261031T130000
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
- Telemundo: availability varies by match\; USA/NBC linear matches can also 
- be watched through Hulu + Live TV. Exact U.S. assignment not yet announced
- .\nSchedule note: Kickoff time is provisional and may move for UK televisi
- on/competition scheduling.\nSource: https://www.premierleague.com/en/news/
- 4675097/all-380-fixtures-for-202627-premier-league-season
-DTSTAMP:20261010T120301Z
-SEQUENCE:1
-END:VEVENT
-BEGIN:VEVENT
 UID:86065c0c707c00cb310c0ac6@soccer-calendar.local
 X-SOCCERCAL-ESPN-ID:401882819
 DTSTAMP:20261011T111611Z
@@ -1323,7 +1306,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:28ee4dc6b9943447802aa8cb@soccer-calendar.local
 X-SOCCERCAL-ESPN-ID:401879246
-DTSTAMP:20261011T111611Z
+DTSTAMP:20261017T111508Z
 SUMMARY:Liverpool vs Arsenal
 CATEGORIES:Premier League
 DTSTART;TZID=America/New_York:20261101T113000
@@ -1337,10 +1320,11 @@ DESCRIPTION:Competition: Premier League\nU.S. streaming/broadcast: Peacock/
   USA Network\, CNBC or Syfy are currently absent from Peacock's replay lib
  rary after the Versant spin-off - for those\, record the linear broadcast 
  (DVR via Hulu + Live TV or similar) to rewatch.\nSource: ESPN fixture feed
- \, refreshed daily.
+ \, refreshed daily.\nSource: https://www.premierleague.com/en/news/4675097
+ /all-380-fixtures-for-202627-premier-league-season
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-SEQUENCE:2
+SEQUENCE:3
 X-SOCCERCAL-COMP:eng.1
 X-SOCCERCAL-FP:1205351a4c9c
 END:VEVENT
